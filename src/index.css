@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-outfit: "Outfit", system-ui;
+
+  --color-dark: #161513;
+  --color-nav: #222222;
+  --color-contact: #191919;
+  --color-card: #2a2a2a;
+  --color-secondary: #c5c5c5;
+  --color-blue: #5badff;
+
+  --color-softOrange: #ff8660;
+  --color-boldOrange: #d5491d;
+
+  --shadow-box: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+button {
+  cursor: pointer;
+}
