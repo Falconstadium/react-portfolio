@@ -1,32 +1,24 @@
 import { useEffect, useState } from "react";
 import { projects } from "../assets/data";
-import { motion } from "framer-motion";
+import { resources } from "../resources/sharedResources";
+import { getLang } from "../lib";
+import type { LanguageKey } from "./Hero";
 
 export const Projects = () => {
+  // show only 2 projects on the screen.
   const [items, setItems] = useState([]);
   useEffect(() => {
     setItems(projects.slice(0, 2));
   }, []);
 
+  const lang = getLang() as LanguageKey;
+
   return (
     <section className="grid place-content-center place-items-center gap-6 pt-6 pb-20">
-      <motion.h1
-        className="from-softOrange to-boldOrange bg-gradient-to-b bg-clip-text text-xl font-bold text-transparent uppercase"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ amount: "all", once: true }}
-        transition={{ duration: 1, ease: "easeIn" }}
-      >
-        projects
-      </motion.h1>
-      <motion.div
-        className="grid gap-6 md:grid-cols-2"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ amount: "all", once: true }}
-        exit={{ opacity: 0, y: 20 }}
-        transition={{ duration: 1 }}
-      >
+      <h1 className="from-softOrange to-boldOrange bg-gradient-to-b bg-clip-text text-xl font-bold text-transparent uppercase">
+        {resources[lang].projects}
+      </h1>
+      <div className="grid gap-6 md:grid-cols-2">
         {items?.map((pro) => (
           <div className="grid gap-3" key={pro.id}>
             <img
@@ -42,7 +34,7 @@ export const Projects = () => {
             >
               <p className="grid">
                 <span className="text-secondary text-xs uppercase">
-                  Click here to visit
+                  {resources[lang].hero.link}
                 </span>
                 <span className="font-medium capitalize">
                   {pro.name}: {pro.title}
@@ -66,7 +58,7 @@ export const Projects = () => {
             </a>
           </div>
         ))}
-      </motion.div>
+      </div>
     </section>
   );
 };

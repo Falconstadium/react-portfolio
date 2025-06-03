@@ -16,6 +16,39 @@
   --color-boldOrange: #d5491d;
 
   --shadow-box: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  --animate-fadein: fade linear 1s;
+}
+
+.img {
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  box-shadow: var(--color-dark) 0px 7px 29px 0px;
+  border: 2px solid var(--color-dark);
+  position: relative;
+  transition: all 1s ease-in-out;
+  animation: alpha 8s ease-in-out infinite;
+}
+@keyframes alpha {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }
 
 button {

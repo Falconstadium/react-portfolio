@@ -7,6 +7,7 @@ import react from "/React-Dark.svg";
 
 import risat from "/risat.jpeg";
 import salla from "/salla.jpeg";
+import dentalab from "/dentalab.jpeg";
 
 export const tech = [
   {
@@ -35,23 +36,6 @@ export const tech = [
   },
 ];
 
-// export const projectsHome = [
-//   {
-//     id: 1,
-//     src: risat,
-//     title: "Risat",
-//     link: "https://risat.vercel.app/",
-//     desc: "personal project",
-//   },
-//   {
-//     id: 2,
-//     src: salla,
-//     title: "Salla",
-//     link: "https://salla-ten.vercel.app/",
-//     desc: "ecommerce website",
-//   },
-// ];
-
 export const projects = [
   {
     id: 1,
@@ -60,9 +44,6 @@ export const projects = [
     title: "personal project",
     desc: "I always wanted a platform that combines a lot of tools, and uses them every day that's why I created this website.",
     link: "https://risat.vercel.app/",
-    initialX: -20,
-    animateX: 0,
-    delay: 0.2,
   },
   {
     id: 2,
@@ -72,18 +53,12 @@ export const projects = [
     desc: "Salla is an e-commerce website, in this project I used nextjs, this is the first time I have worked with next, I also used shadcn-ui.",
     link: "https://salla-ten.vercel.app/",
     className: "lg:-order-1",
-    initialX: 20,
-    animateX: 0,
-    delay: 0.4,
   },
   {
     id: 3,
-    src: risat,
+    src: dentalab,
     name: "Dentalab",
     title: "landing page",
     desc: "DENTALAB is a landing page for a dentist to introduce its lab and let people know about it, The page welcomes visitors and highlighting it as the best place to make teeth look great, with lots of services.",
-    initialX: -20,
-    animateX: 0,
-    delay: 0.6,
   },
 ];

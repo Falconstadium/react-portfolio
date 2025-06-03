@@ -1,19 +1,15 @@
-import { Route, Routes, useLocation, BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { Home } from "./components/Home";
 import { NotFound } from "./components/NotFound";
-import { ProjectsPage } from "./components/ProjectsPage";
-import { AnimatePresence } from "framer-motion";
+import { ProjectsPage } from "./routes/ProjectsPage";
 
-function AnimatedRoutes() {
-  const location = useLocation();
+function Routing() {
   return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/:lang/" element={<Home />} />
-        <Route path="/:lang/projects" element={<ProjectsPage />} />
-        <Route path="/:lang/*" element={<NotFound />} />
-      </Routes>
-    </AnimatePresence>
+    <Routes>
+      <Route path="/:lang/" element={<Home />} />
+      <Route path="/:lang/projects" element={<ProjectsPage />} />
+      <Route path="/:lang/*" element={<NotFound />} />
+    </Routes>
   );
 }
 
@@ -21,7 +17,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <AnimatedRoutes />
+        <Routing />
       </BrowserRouter>
     </>
   );

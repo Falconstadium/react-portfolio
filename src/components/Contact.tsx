@@ -1,17 +1,16 @@
-import { motion } from "framer-motion";
+import { getLang } from "../lib";
+import { resources } from "../resources/sharedResources";
+import type { LanguageKey } from "./Hero";
 
 export const Contact = () => {
+  const lang = getLang() as LanguageKey;
+
   return (
     <section className="bg-contact px-4 py-12" id="contact">
-      <motion.div
-        className="mx-auto grid max-w-2xl gap-8"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ amount: "all", once: true }}
-        exit={{ opacity: 0, y: 20 }}
-        transition={{ duration: 1 }}
-      >
-        <h1 className="text-xl font-bold">Contact</h1>
+      <div className="mx-auto grid max-w-2xl gap-8">
+        <h1 className="text-lg font-bold uppercase lg:text-xl">
+          {resources[lang].contact.title}
+        </h1>
         <p className="flex items-center gap-2 text-sm">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,10 +29,9 @@ export const Contact = () => {
           </svg>
           yassiraterta@gmail.com
         </p>
-        <p className="text-secondary text-sm tracking-wide">
-          A Frontend web developer, with a focus on developing landing pages and
-          websites. <br /> My main stack currently is React in combination with
-          Tailwind CSS and TypeScript.
+        <p className="text-secondary text-sm leading-relaxed tracking-wide">
+          {resources[lang].contact.parag1} <br />{" "}
+          {resources[lang].contact.parag2}
         </p>
         <ul className="flex items-center gap-4">
           <li>
@@ -109,7 +107,7 @@ export const Contact = () => {
             </a>
           </li>
         </ul>
-      </motion.div>
+      </div>
     </section>
   );
 };
