@@ -13,6 +13,7 @@ import next from "/React-Dark.svg";
 import risat from "/risat.jpeg";
 import salla from "/salla.jpeg";
 import dentalab from "/dentalab.jpeg";
+import rayyan from "/rayyan.jpeg";
 
 import github from "/github.svg";
 import linkedin from "/linkedin-1.svg";
@@ -90,14 +91,28 @@ export const projects = [
   {
     id: 3,
     src: dentalab,
-    name: "Dentalab",
+    name: "dentalab",
     title: `${resources[lang].project.dentalab.title}`,
     desc: `${resources[lang].project.dentalab.desc}`,
     link: "https://dentalab.vercel.app/",
     githubRepo: "https://github.com/Falconstadium/DENTALAB",
-    animate: "animate-dentalab",
+    animate: "animate-risat",
     stack1: html,
     stack2: css,
     stack3: js,
+  },
+  {
+    id: 4,
+    src: rayyan,
+    name: "al rayyan",
+    title: `${resources[lang].project.dentalab.title}`,
+    desc: `${resources[lang].project.dentalab.desc}`,
+    link: "https://al-rayaan.netlify.app/",
+    githubRepo: "https://github.com/Falconstadium/al-rayyan",
+    className: `lg:-order-1 ${lang == "ar" ? "pr-6" : "pl-6"}`,
+    animate: "animate-salla",
+    stack1: react,
+    stack2: ts,
+    stack3: tailwind,
   },
 ];

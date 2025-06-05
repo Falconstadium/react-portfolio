@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
 import Preloading from "./components/Preloading";
 
 const Home = lazy(() => import("./components/Home"));
@@ -16,6 +16,7 @@ function Routing() {
       }
     >
       <Routes>
+        <Route path="/" element={<Navigate to="/en/" replace />} />
         <Route path="/:lang/" element={<Home />} />
         <Route path="/:lang/projects" element={<ProjectsPage />} />
         <Route path="*" element={<NotFound />} />
