@@ -6,15 +6,15 @@ import { Projects } from "./Projects";
 
 type LanguageKey = "en" | "fr" | "ar";
 
-const lang: any = getLang();
+const lang = getLang();
 const validatedLang: LanguageKey = ["en", "fr", "ar"].includes(lang)
   ? (lang as LanguageKey)
   : "en";
 
-export const Home = () => {
+const Home = () => {
   return (
     <article className="font-outfit bg-dark text-white">
-      <main className="grid min-h-dvh grid-rows-[1fr]">
+      <main className="grid min-h-dvh grid-rows-[auto_1fr]">
         <Navbar langName={validatedLang} />
         <div className="bg-card">
           <div className="mx-auto max-w-2xl">
@@ -27,3 +27,5 @@ export const Home = () => {
     </article>
   );
 };
+
+export default Home;

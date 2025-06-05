@@ -18,5 +18,19 @@ export const arSharedResources = {
     parag2:
       "المجموعة الرئيسية الخاصة بي حاليًا هي React بالاشتراك مع Tailwind CSS و TypeScript.",
   },
-  projects: "مشاريع",
+  project: {
+    title: "مشاريع",
+    risat: {
+      title: "مشروع شخصي",
+      desc: "لقد أردت دائمًا منصة تجمع بين أدوات متعددة وتستخدمها يوميًا، ولهذا السبب قمت بإنشاء هذا الموقع.",
+    },
+    salla: {
+      title: "موقع للتجارة الإلكترونية",
+      desc: "Salla هو موقع للتجارة الإلكترونية. يستخدم هذا المشروع Next.js وShadcn-UI.",
+    },
+    dentalab: {
+      title: "صفحة الهبوط",
+      desc: "DENTALAB هي صفحة مقصودة لعيادة الأسنان.",
+    },
+  },
 };

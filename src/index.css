@@ -15,14 +15,14 @@
   --color-softOrange: #ff8660;
   --color-boldOrange: #d5491d;
 
-  --shadow-box: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  --shadow-box: var(--color-dark) 0px 2px 8px 0px;
 
   --animate-fadein: fade linear 1s;
 }
 
 .img {
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  box-shadow: var(--color-dark) 0px 7px 29px 0px;
+  box-shadow: var(--color-dark) 0px 8px 24px;
   border: 2px solid var(--color-dark);
   position: relative;
   transition: all 1s ease-in-out;
@@ -40,6 +40,7 @@
   }
 }
 
+/* fade animation */
 @keyframes fade {
   from {
     opacity: 0;
@@ -48,6 +49,47 @@
   to {
     opacity: 1;
     scale: 1;
+  }
+}
+
+.animate-risat {
+  animation: fadeR 1s ease-in forwards;
+}
+.animate-salla {
+  animation: fadeS 1.5s ease-in forwards;
+}
+.animate-dentalab {
+  animation: fadeD 2s ease-in forwards;
+}
+
+@keyframes fadeR {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeS {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeD {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 

@@ -22,7 +22,21 @@ export const resources = {
       parag2:
         "My main stack currently is React in combination with Tailwind CSS and TypeScript.",
     },
-    projects: "Projects",
+    project: {
+      title: "Projects",
+      risat: {
+        title: "personal project",
+        desc: "I have always wanted a platform that combines multiple tools and utilises them daily, which is why I created this website.",
+      },
+      salla: {
+        title: "e-commerce website",
+        desc: "Salla is an ecommerce site. This project uses Next.js and Shadcn-UI.",
+      },
+      dentalab: {
+        title: "landing page",
+        desc: "DENTALAB is a landing page for a dental clinic",
+      },
+    },
   },
   fr: frSharedResources,
   ar: arSharedResources,

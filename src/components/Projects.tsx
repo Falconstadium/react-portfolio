@@ -16,7 +16,7 @@ export const Projects = () => {
   return (
     <section className="grid place-content-center place-items-center gap-6 pt-6 pb-20">
       <h1 className="from-softOrange to-boldOrange bg-gradient-to-b bg-clip-text text-xl font-bold text-transparent uppercase">
-        {resources[lang].projects}
+        {resources[lang].project.title}
       </h1>
       <div className="grid gap-6 md:grid-cols-2">
         {items?.map((pro) => (
@@ -24,6 +24,7 @@ export const Projects = () => {
             <img
               src={pro.src}
               alt={pro.src}
+              loading="lazy"
               className="h-44 w-80 rounded-tl-md rounded-tr-md object-cover object-top transition-all duration-1000 hover:object-bottom"
             />
             <a
