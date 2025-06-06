@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
+
 import { resources } from "../resources/sharedResources";
 import { langList } from "../lib";
-import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+
 import pic from "/y.svg";
 
 export interface NavbarProps {
@@ -25,16 +27,8 @@ export const Navbar = ({ langName }: NavbarProps) => {
 
   const [showLngMenu, setShowLngMenu] = useState(false);
 
-  // bg-sticky
-  const [color, setColor] = useState(false);
-  window.addEventListener("scroll", () => {
-    window.scrollY >= 10 ? setColor(true) : setColor(false);
-  });
-
   return (
-    <header
-      className={`bg-nav fixed top-0 z-20 w-full px-4 py-0.5 transition-all duration-300 ${color ? "bg-nav/75 backdrop-blur" : ""}`}
-    >
+    <header className="bg-nav w-full px-4 py-0.5 transition-all duration-300">
       <nav className="relative mx-auto flex max-w-2xl items-center justify-between">
         <div className="animate-salla">
           <Link

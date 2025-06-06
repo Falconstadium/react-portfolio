@@ -1,27 +1,19 @@
 import { twMerge } from "tailwind-merge";
-import { projects } from "../assets/data";
+import { Link } from "react-router-dom";
+
 import { getLang } from "../lib";
 import { resources } from "../resources/sharedResources";
 import type { LanguageKey } from "../components/Hero";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+
+import { projects } from "../assets/data";
 import pic from "/y.svg";
 
 export const lang = getLang() as LanguageKey;
 
 const ProjectsPage = () => {
-  // bg-sticky
-
-  const [color, setColor] = useState(false);
-  window.addEventListener("scroll", () => {
-    window.scrollY >= 10 ? setColor(true) : setColor(false);
-  });
-
   return (
-    <main className="bg-card font-outfit text-white">
-      <header
-        className={`bg-nav py-.5 sticky top-0 z-10 px-4 py-0.5 transition-all duration-300 ${color ? "bg-nav/75 backdrop-blur" : ""}`}
-      >
+    <main className="bg-card font-main text-white">
+      <header className="bg-nav py-.5 px-4 py-0.5 transition-all duration-30">
         <nav className="mx-auto flex max-w-2xl items-center justify-between">
           <div className="animate-salla">
             <Link

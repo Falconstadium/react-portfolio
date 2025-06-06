@@ -8,7 +8,7 @@ const lang = getLang() as LanguageKey;
 
 export const Hero = () => {
   return (
-    <div className="animate-fadein grid min-h-dvh place-content-center place-items-center gap-6 px-6 pt-8">
+    <div className="animate-fadein grid place-content-center place-items-center gap-6 px-6 py-16">
       <div className="img aspect-square w-56 bg-[url('/me-yassir.jpeg')] bg-cover bg-no-repeat xl:w-60"></div>
       <div className="grid gap-2 text-center">
         <div>

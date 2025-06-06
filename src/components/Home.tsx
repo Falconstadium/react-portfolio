@@ -13,11 +13,11 @@ const validatedLang: LanguageKey = ["en", "fr", "ar"].includes(lang)
 
 const Home = () => {
   return (
-    <article className="font-outfit bg-dark text-white">
+    <article className="font-main bg-dark text-white">
       <main className="grid min-h-dvh grid-rows-[auto_1fr]">
         <Navbar langName={validatedLang} />
         <div className="bg-card">
-          <div className="mx-auto max-w-2xl">
+          <div className="mx-auto grid min-h-dvh max-w-2xl gap-5">
             <Hero />
             <Projects />
           </div>

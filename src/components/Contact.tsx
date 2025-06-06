@@ -12,11 +12,11 @@ export const Contact = () => {
         <h1 className="text-lg font-bold uppercase lg:text-xl">
           {resources[lang].contact.title}
         </h1>
-        <p className="flex items-center gap-2 text-sm">
+        <p className="flex items-center gap-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="14"
-            height="14"
+            width="15"
+            height="15"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -28,7 +28,12 @@ export const Contact = () => {
             <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
             <rect x="2" y="4" width="20" height="16" rx="2" />
           </svg>
-          yassiraterta@gmail.com
+          <a
+            href="mailto:yassiraterta@gmail.com"
+            className="text-secondary text-xs tracking-wide transition-colors duration-300 hover:text-white"
+          >
+            yassiraterta@gmail.com
+          </a>
         </p>
         <p className="text-secondary text-sm leading-relaxed tracking-wide">
           {resources[lang].contact.parag1} <br />{" "}
