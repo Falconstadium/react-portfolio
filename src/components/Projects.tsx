@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { projects } from "../assets/data";
 import { resources } from "../resources/sharedResources";
 import { getLang } from "../lib";
@@ -6,10 +5,7 @@ import type { LanguageKey } from "./Hero";
 
 export const Projects = () => {
   // show only 2 projects on the screen.
-  const [items, setItems] = useState([]);
-  useEffect(() => {
-    setItems(projects.slice(0, 2));
-  }, []);
+  const items = projects.slice(0, 2);
 
   const lang = getLang() as LanguageKey;
 

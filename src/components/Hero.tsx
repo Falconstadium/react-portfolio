@@ -39,7 +39,7 @@ export const Hero = () => {
                   src={stack.src}
                   alt={stack.src}
                   loading="lazy"
-                  className="w-5 transition-transform duration-500 ease-in-out hover:-translate-y-1 lg:w-7"
+                  className="w-7 transition-transform duration-500 ease-in-out hover:-translate-y-1"
                 />
               </li>
             ))}

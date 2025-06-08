@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
 import Preloading from "./components/Preloading";
 
-const Home = lazy(() => import("./components/Home"));
+const Home = lazy(() => import("./routes/Home"));
 const ProjectsPage = lazy(() => import("./routes/ProjectsPage"));
 const NotFound = lazy(() => import("./routes/NotFound"));
 

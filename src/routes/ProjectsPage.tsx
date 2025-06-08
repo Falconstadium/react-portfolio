@@ -6,31 +6,41 @@ import { resources } from "../resources/sharedResources";
 import type { LanguageKey } from "../components/Hero";
 
 import { projects } from "../assets/data";
-import pic from "/y.svg";
 
 export const lang = getLang() as LanguageKey;
 
 const ProjectsPage = () => {
   return (
     <main className="bg-card font-main text-white">
-      <header className="bg-nav py-.5 px-4 py-0.5 transition-all duration-30">
-        <nav className="mx-auto flex max-w-2xl items-center justify-between">
-          <div className="animate-salla">
-            <Link
-              to={"/" + lang}
-              className="text-xl font-semibold tracking-wide uppercase"
-            >
-              <img src={pic} alt={pic} className="h-14 w-14" />
+      <header className="bg-nav px-6 py-3 transition-all duration-30">
+        <nav className="mx-auto max-w-2xl">
+          <div className="animate-risat">
+            <Link to={"/" + lang} className="flex items-center gap-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-move-left-icon text-boldOrange lucide-move-left"
+              >
+                <path d="M6 8L2 12L6 16" />
+                <path d="M2 12H22" />
+              </svg>
+              <h3 className="from-softOrange to-boldOrange bg-gradient-to-b bg-clip-text text-center text-xl font-semibold tracking-wide text-transparent uppercase">
+                {resources[lang].project.title}
+              </h3>
             </Link>
           </div>
-          <h3 className="from-softOrange to-boldOrange animate-risat bg-gradient-to-b bg-clip-text text-xl font-bold text-transparent uppercase">
-            {resources[lang].project.title}
-          </h3>
         </nav>
       </header>
 
       <section className="mx-auto grid min-h-dvh max-w-2xl grid-rows-[auto_1fr]">
-        <div className="grid place-content-center place-items-center gap-12 px-4 py-12">
+        <div className="grid place-content-center place-items-center gap-12 px-6 py-12">
           {projects.map((proj) => (
             <div
               key={proj.id}
