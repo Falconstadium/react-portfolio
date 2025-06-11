@@ -32,5 +32,9 @@ export const frSharedResources = {
       title: "landing page",
       desc: "DENTALAB est une page d’accueil pour une clinique dentaire",
     },
+    rayyan: {
+      title: "al rayyan miel",
+      desc: "Ce site présente différents types de miel et leurs avantages.",
+    },
   },
 };

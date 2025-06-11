@@ -26,7 +26,7 @@ const ProjectsPage = () => {
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-move-left-icon text-boldOrange lucide-move-left"
+                className={`lucide lucide-move-left-icon text-boldOrange lucide-move-left ${lang == "ar" ? "-rotate-180" : ""}`}
               >
                 <path d="M6 8L2 12L6 16" />
                 <path d="M2 12H22" />
@@ -53,13 +53,13 @@ const ProjectsPage = () => {
                 src={proj.src}
                 alt={proj.src}
                 loading="lazy"
-                className="h-40 w-64 cursor-pointer rounded object-cover object-top transition-all duration-1000 ease-in-out hover:object-bottom"
+                className="h-40 w-64 cursor-pointer rounded object-cover object-top transition-all duration-1000 ease-in-out hover:object-bottom active:object-bottom"
               />
               <div className={twMerge("grid gap-0.5 py-6", proj.className)}>
                 <h2 className="font-semibold tracking-wide capitalize xl:text-lg">
                   {proj.title}
                 </h2>
-                <p className="text-secondary text-sm tracking-wider">
+                <p className="text-secondary text-xs tracking-wider xl:text-sm">
                   {proj.desc}
                 </p>
                 <div className="flex items-center justify-center gap-4 pt-3">
@@ -84,7 +84,7 @@ const ProjectsPage = () => {
                     href={proj.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:bg-blue flex items-center gap-1.5 rounded-2xl bg-blue-500 px-4 py-1 transition-colors duration-300"
+                    className="hover:bg-blue active:bg-blue flex items-center gap-1.5 rounded-2xl bg-blue-500 px-4 py-1 transition-colors duration-300"
                   >
                     <span className="text-xs font-medium capitalize">
                       {resources[lang].hero.link}
@@ -111,7 +111,7 @@ const ProjectsPage = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     title="github-repo"
-                    className="bg-dark hover:bg-nav rounded px-2 py-1 transition-all duration-300 hover:scale-110"
+                    className="bg-dark hover:bg-nav active:bg-nav rounded px-2 py-1 transition-all duration-300 hover:scale-110"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

@@ -32,5 +32,9 @@ export const arSharedResources = {
       title: "صفحة الهبوط",
       desc: "DENTALAB هي صفحة مقصودة لعيادة الأسنان.",
     },
+    rayyan: {
+      title: "عسل الريان",
+      desc: "يعرض هذا الموقع بعض أنواع العسل المختلفة وفوائدها.",
+    },
   },
 };

@@ -36,6 +36,10 @@ export const resources = {
         title: "landing page",
         desc: "DENTALAB is a landing page for a dental clinic",
       },
+      rayyan: {
+        title: "al rayyan honey",
+        desc: "This website presents some different types of honey and their benefits.",
+      },
     },
   },
   fr: frSharedResources,

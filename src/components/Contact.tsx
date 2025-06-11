@@ -35,7 +35,7 @@ export const Contact = () => {
             yassiraterta@gmail.com
           </a>
         </p>
-        <p className="text-secondary text-sm leading-relaxed tracking-wide">
+        <p className="text-secondary text-xs leading-relaxed tracking-wide xl:text-sm">
           {resources[lang].contact.parag1} <br />{" "}
           {resources[lang].contact.parag2}
         </p>
@@ -49,7 +49,7 @@ export const Contact = () => {
                 <img
                   src={social.src}
                   alt={social.src}
-                  className="size-6 text-white xl:size-7"
+                  className="size-5 text-white xl:size-6"
                 />
               </a>
             </li>

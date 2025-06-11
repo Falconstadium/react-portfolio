@@ -12,12 +12,12 @@ export const Hero = () => {
       <div className="img aspect-square w-56 bg-[url('/me-yassir.jpeg')] bg-cover bg-no-repeat xl:w-60"></div>
       <div className="grid gap-2 text-center">
         <div>
-          <h1 className="text-xl font-semibold lg:text-3xl">
+          <h1 className="text-2xl font-semibold xl:text-3xl">
             {resources[lang].hero.title}
           </h1>
-          <p className="text-secondary text-xs tracking-wider lg:text-sm">
+          <p className="text-secondary text-xs tracking-wider xl:text-sm">
             <span>
-              {resources[lang].hero.greeting}{" "}
+              {resources[lang].hero.greeting}
               <strong className="uppercase">
                 {resources[lang].hero.name}.
               </strong>
@@ -25,7 +25,7 @@ export const Hero = () => {
             <span> {resources[lang].hero.desc}</span>
           </p>
         </div>
-        <button className="text-dark hover:bg-secondary mx-auto mt-2 rounded-2xl bg-white px-4 py-1 text-sm font-medium capitalize transition-colors duration-300 ease-in-out">
+        <button className="text-dark hover:bg-secondary active:bg-secondary mx-auto mt-2 rounded-2xl bg-white px-4 py-1 text-sm font-medium capitalize transition-colors duration-300 ease-in-out">
           <a href="#contact">{resources[lang].hero.contact}</a>
         </button>
         <div className="grid gap-3 pt-6">
@@ -39,7 +39,7 @@ export const Hero = () => {
                   src={stack.src}
                   alt={stack.src}
                   loading="lazy"
-                  className="w-7 transition-transform duration-500 ease-in-out hover:-translate-y-1"
+                  className="w-7 transition-transform duration-500 ease-in-out hover:-translate-y-1 active:-translate-y-1"
                 />
               </li>
             ))}

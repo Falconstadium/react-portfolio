@@ -21,7 +21,7 @@ export const Projects = () => {
               src={pro.src}
               alt={pro.src}
               loading="lazy"
-              className="h-44 w-80 rounded-tl-md rounded-tr-md object-cover object-top transition-all duration-1000 hover:object-bottom"
+              className="h-44 w-80 rounded-t-lg object-cover object-top transition-all duration-1000 hover:object-bottom active:object-bottom"
             />
             <a
               href={pro.link}
