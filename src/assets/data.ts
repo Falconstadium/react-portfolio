@@ -2,18 +2,17 @@ import type { LanguageKey } from "../components/Hero";
 import { getLang } from "../lib";
 import { resources } from "../resources/sharedResources";
 
-import html from "/HTML.svg";
 import css from "/CSS.svg";
+import html from "/HTML.svg";
 import js from "/JavaScript.svg";
-import ts from "/TypeScript.svg";
+import { default as next, default as react } from "/React-Dark.svg";
 import tailwind from "/TailwindCSS-Dark.svg";
-import react from "/React-Dark.svg";
-import next from "/React-Dark.svg";
+import ts from "/TypeScript.svg";
 
-import risat from "/risat.jpeg";
-import salla from "/salla.jpeg";
 import dentalab from "/dentalab.jpeg";
 import rayyan from "/rayyan.jpeg";
+import risat from "/risat.jpeg";
+import salla from "/salla.jpeg";
 
 import github from "/github.svg";
 import linkedin from "/linkedin-1.svg";
@@ -69,6 +68,7 @@ export const projects = [
     desc: `${resources[lang].project.risat.desc}`,
     link: "https://risat.vercel.app/",
     githubRepo: "https://github.com/Falconstadium/risat",
+    className: `${lang == "ar" ? "pr-6" : ""}`,
     animate: "animate-risat",
     stack1: react,
     stack2: ts,
@@ -82,7 +82,7 @@ export const projects = [
     desc: `${resources[lang].project.salla.desc}`,
     link: "https://salla-ten.vercel.app/",
     githubRepo: "https://github.com/Falconstadium/salla",
-    className: `lg:-order-1 ${lang == "ar" ? "pr-6" : "pl-6"}`,
+    className: `lg:-order-1 ${lang == "ar" ? "pr-6" : ""}`,
     animate: "animate-salla",
     stack1: next,
     stack2: ts,
@@ -96,6 +96,7 @@ export const projects = [
     desc: `${resources[lang].project.dentalab.desc}`,
     link: "https://dentalab.vercel.app/",
     githubRepo: "https://github.com/Falconstadium/DENTALAB",
+    className: `${lang == "ar" ? "pr-6" : ""}`,
     animate: "animate-risat",
     stack1: html,
     stack2: css,
@@ -109,7 +110,7 @@ export const projects = [
     desc: `${resources[lang].project.rayyan.desc}`,
     link: "https://al-rayaan.netlify.app/",
     githubRepo: "https://github.com/Falconstadium/al-rayyan",
-    className: `lg:-order-1 ${lang == "ar" ? "pr-6" : "pl-6"}`,
+    className: `lg:-order-1 ${lang == "ar" ? "pr-6" : ""}`,
     animate: "animate-salla",
     stack1: react,
     stack2: ts,

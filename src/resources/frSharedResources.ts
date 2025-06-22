@@ -4,7 +4,7 @@ export const frSharedResources = {
   },
   hero: {
     title: "Développeur Web Front-End.",
-    greeting: "Bonjour, je suis",
+    greeting: "Bonjour, je suis ",
     name: "yassir",
     desc: "Un développeur web basé à Agadir, au Maroc.📍",
     contact: "prendre contact",
@@ -14,7 +14,7 @@ export const frSharedResources = {
   contact: {
     title: "contact",
     parag1:
-      "Développeur web Front-End, axé sur le développement de landing pages et d’interfaces utilisateur.",
+      "Développeur web front-end, se concentrant sur le développement de belles UX et UI.",
     parag2:
       "Ma pile principale est actuellement React en combinaison avec Tailwind CSS et TypeScript.",
   },

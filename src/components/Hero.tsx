@@ -12,10 +12,10 @@ export const Hero = () => {
       <div className="img aspect-square w-56 bg-[url('/me-yassir.jpeg')] bg-cover bg-no-repeat xl:w-60"></div>
       <div className="grid gap-2 text-center">
         <div>
-          <h1 className="text-2xl font-semibold xl:text-3xl">
+          <h1 className="text-2xl font-semibold tracking-tighter xl:text-3xl">
             {resources[lang].hero.title}
           </h1>
-          <p className="text-secondary text-xs tracking-wider xl:text-sm">
+          <p className="text-secondary text-xs xl:text-sm">
             <span>
               {resources[lang].hero.greeting}
               <strong className="uppercase">

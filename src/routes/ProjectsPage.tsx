@@ -1,9 +1,9 @@
-import { twMerge } from "tailwind-merge";
 import { Link } from "react-router-dom";
+import { twMerge } from "tailwind-merge";
 
+import type { LanguageKey } from "../components/Hero";
 import { getLang } from "../lib";
 import { resources } from "../resources/sharedResources";
-import type { LanguageKey } from "../components/Hero";
 
 import { projects } from "../assets/data";
 
@@ -84,7 +84,7 @@ const ProjectsPage = () => {
                     href={proj.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:bg-blue active:bg-blue flex items-center gap-1.5 rounded-2xl bg-blue-500 px-4 py-1 transition-colors duration-300"
+                    className="hover:bg-blue active:bg-blue flex items-center gap-1.5 rounded-2xl bg-blue-500 px-4 py-2 text-nowrap transition-colors duration-300"
                   >
                     <span className="text-xs font-medium capitalize">
                       {resources[lang].hero.link}
@@ -99,7 +99,7 @@ const ProjectsPage = () => {
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="lucide lucide-external-link-icon lucide-external-link"
+                      className={`lucide lucide-external-link-icon lucide-external-link ${lang == "ar" ? "-rotate-90" : ""}`}
                     >
                       <path d="M15 3h6v6" />
                       <path d="M10 14 21 3" />
@@ -111,7 +111,7 @@ const ProjectsPage = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     title="github-repo"
-                    className="bg-dark hover:bg-nav active:bg-nav rounded px-2 py-1 transition-all duration-300 hover:scale-110"
+                    className="bg-dark hover:bg-nav active:bg-nav rounded px-2 py-2 transition-all duration-300 hover:scale-110"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

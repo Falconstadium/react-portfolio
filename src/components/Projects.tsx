@@ -1,6 +1,6 @@
 import { projects } from "../assets/data";
-import { resources } from "../resources/sharedResources";
 import { getLang } from "../lib";
+import { resources } from "../resources/sharedResources";
 import type { LanguageKey } from "./Hero";
 
 export const Projects = () => {
@@ -47,7 +47,7 @@ export const Projects = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-arrow-up-right-icon lucide-arrow-up-right"
+                className={`lucide lucide-arrow-up-right-icon lucide-arrow-up-right ${lang == "ar" ? "-rotate-90" : ""}`}
               >
                 <path d="M7 7h10v10" />
                 <path d="M7 17 17 7" />
