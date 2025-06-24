@@ -66,17 +66,17 @@ const ProjectsPage = () => {
                   <img
                     src={proj.stack1}
                     alt={proj.stack1}
-                    className="w-6 transition-all duration-300 hover:-translate-y-2"
+                    className="w-7 transition-all duration-300 hover:-translate-y-2"
                   />
                   <img
                     src={proj.stack2}
                     alt={proj.stack2}
-                    className="w-6 transition-all duration-300 hover:-translate-y-2"
+                    className="w-7 transition-all duration-300 hover:-translate-y-2"
                   />
                   <img
                     src={proj.stack3}
                     alt={proj.stack3}
-                    className="w-6 transition-all duration-300 hover:-translate-y-2"
+                    className="w-7 transition-all duration-300 hover:-translate-y-2"
                   />
                 </div>
                 <div className="mt-4 flex items-center justify-center gap-2">

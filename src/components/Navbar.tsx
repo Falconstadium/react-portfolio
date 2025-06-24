@@ -20,11 +20,11 @@ export const Navbar = ({ langName }: NavbarProps) => {
             <img src={pic} alt="logo" loading="lazy" className="h-14 w-14" />
           </Link>
         </div>
-        <ul className="animate-risat flex items-center gap-4">
+        <ul className="animate-risat flex items-center gap-4 text-xs lg:text-sm">
           <li>
             <Link
               to={"/" + lang + "/projects"}
-              className="transition-all duration-200 hover:font-medium active:font-medium"
+              className="transition-all duration-300 hover:font-medium active:font-medium"
             >
               {resources[lang].project.title}
             </Link>

@@ -1,6 +1,6 @@
-import { langList } from "../lib";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { langList } from "../lib";
 
 const LangSelector = ({ langName }) => {
   const langFullName = langList[langName];
@@ -49,7 +49,7 @@ const LangSelector = ({ langName }) => {
         type="button"
         ref={buttonRef}
         onClick={() => handleClickOutside()}
-        className="hover:bg-card active:bg-card text-secondary flex items-center gap-1 rounded px-2 py-1 text-sm font-light transition-colors duration-200 ease-in-out hover:text-white"
+        className="hover:bg-card active:bg-card text-secondary flex items-center gap-1 rounded px-2 py-1 font-light transition-colors duration-200 ease-in-out hover:text-white"
       >
         {langFullName}
 
