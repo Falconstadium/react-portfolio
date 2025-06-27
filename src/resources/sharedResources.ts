@@ -18,7 +18,7 @@ export const resources = {
     contact: {
       title: "contact",
       parag1:
-        "Front-end web developer, focusing on developing beautiful UX and UI.",
+        "Front-end web developer, focusing on developing beautiful UI and UX.",
       parag2:
         "My main stack currently is React in combination with Tailwind CSS and TypeScript.",
     },

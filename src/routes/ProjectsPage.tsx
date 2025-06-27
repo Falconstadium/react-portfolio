@@ -13,9 +13,9 @@ const ProjectsPage = () => {
   return (
     <main className="bg-card font-main text-white">
       <header className="bg-nav px-6 py-3 transition-all duration-30">
-        <nav className="mx-auto max-w-2xl">
+        <nav className="mx-auto max-w-3xl">
           <div className="animate-risat">
-            <Link to={"/" + lang} className="flex items-center gap-4">
+            <Link to={"/" + lang} className="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -31,7 +31,7 @@ const ProjectsPage = () => {
                 <path d="M6 8L2 12L6 16" />
                 <path d="M2 12H22" />
               </svg>
-              <h3 className="from-softOrange to-boldOrange bg-gradient-to-b bg-clip-text text-center text-xl font-semibold tracking-wide text-transparent uppercase">
+              <h3 className="from-softOrange to-boldOrange bg-gradient-to-b bg-clip-text font-semibold tracking-wide text-transparent uppercase">
                 {resources[lang].project.title}
               </h3>
             </Link>
@@ -84,7 +84,7 @@ const ProjectsPage = () => {
                     href={proj.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:bg-blue active:bg-blue flex items-center gap-1.5 rounded-2xl bg-blue-500 px-4 py-2 text-nowrap transition-colors duration-300"
+                    className="flex items-center gap-1.5 rounded-2xl bg-blue-600 px-4 py-2 text-nowrap transition-colors duration-300 hover:bg-blue-500 active:bg-blue-500"
                   >
                     <span className="text-xs font-medium capitalize">
                       {resources[lang].hero.link}

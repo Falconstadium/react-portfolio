@@ -14,7 +14,7 @@ export const frSharedResources = {
   contact: {
     title: "contact",
     parag1:
-      "Développeur web front-end, se concentrant sur le développement de belles UX et UI.",
+      "Développeur web front-end, se concentrant sur le développement de belles UI et UX.",
     parag2:
       "Ma pile principale est actuellement React en combinaison avec Tailwind CSS et TypeScript.",
   },

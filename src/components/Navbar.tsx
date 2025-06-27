@@ -14,7 +14,7 @@ export const Navbar = ({ langName }: NavbarProps) => {
 
   return (
     <header className="bg-nav w-full px-4 py-0.5 transition-all duration-300">
-      <nav className="relative mx-auto flex max-w-2xl items-center justify-between">
+      <nav className="relative mx-auto flex max-w-3xl items-center justify-between">
         <div className="animate-salla">
           <Link to={"/" + lang}>
             <img src={pic} alt="logo" loading="lazy" className="h-14 w-14" />
