@@ -5,7 +5,8 @@ import { resources } from "../resources/sharedResources";
 import css from "/CSS.svg";
 import html from "/HTML.svg";
 import js from "/JavaScript.svg";
-import { default as next, default as react } from "/React-Dark.svg";
+import next from "/NextJS-Light.svg";
+import react from "/React-Dark.svg";
 import tailwind from "/TailwindCSS-Dark.svg";
 import ts from "/TypeScript.svg";
 
@@ -69,7 +70,7 @@ export const projects = [
     link: "https://risat.vercel.app/",
     githubRepo: "https://github.com/Falconstadium/risat",
     className: `${lang == "ar" ? "pr-6" : ""}`,
-    animate: "animate-risat",
+    animate: "animate-salla",
     stack1: react,
     stack2: ts,
     stack3: tailwind,
@@ -111,7 +112,7 @@ export const projects = [
     link: "https://al-rayaan.netlify.app/",
     githubRepo: "https://github.com/Falconstadium/al-rayyan",
     className: `lg:-order-1 ${lang == "ar" ? "pr-6" : ""}`,
-    animate: "animate-salla",
+    animate: "animate-risat",
     stack1: react,
     stack2: ts,
     stack3: tailwind,

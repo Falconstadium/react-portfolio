@@ -56,27 +56,25 @@ const ProjectsPage = () => {
                 className="h-40 w-64 cursor-pointer rounded object-cover object-top transition-all duration-1000 ease-in-out hover:object-bottom active:object-bottom"
               />
               <div className={twMerge("grid gap-0.5 py-6", proj.className)}>
-                <h2 className="font-semibold tracking-wide capitalize xl:text-lg">
+                <h2 className="text-center font-semibold tracking-wide capitalize xl:text-base">
                   {proj.title}
                 </h2>
-                <p className="text-secondary text-xs tracking-wider xl:text-sm">
-                  {proj.desc}
-                </p>
+                <p className="text-secondary text-xs">{proj.desc}</p>
                 <div className="flex items-center justify-center gap-4 pt-3">
                   <img
                     src={proj.stack1}
                     alt={proj.stack1}
-                    className="w-7 transition-all duration-300 hover:-translate-y-2"
+                    className="w-6 transition-all duration-300 hover:-translate-y-1"
                   />
                   <img
                     src={proj.stack2}
                     alt={proj.stack2}
-                    className="w-7 transition-all duration-300 hover:-translate-y-2"
+                    className="w-6 transition-all duration-300 hover:-translate-y-1"
                   />
                   <img
                     src={proj.stack3}
                     alt={proj.stack3}
-                    className="w-7 transition-all duration-300 hover:-translate-y-2"
+                    className="w-6 transition-all duration-300 hover:-translate-y-1"
                   />
                 </div>
                 <div className="mt-4 flex items-center justify-center gap-2">
