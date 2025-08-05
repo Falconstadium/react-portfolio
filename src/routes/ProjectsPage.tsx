@@ -12,10 +12,10 @@ export const lang = getLang() as LanguageKey;
 const ProjectsPage = () => {
   return (
     <main className="bg-card font-main text-white">
-      <header className="bg-nav px-6 py-3 transition-all duration-30">
+      <header className="bg-nav px-6 py-5 transition-all duration-30">
         <nav className="mx-auto max-w-3xl">
           <div className="animate-risat">
-            <Link to={"/" + lang} className="flex items-center gap-2">
+            <Link to={"/" + lang} className="flex items-center gap-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -40,12 +40,12 @@ const ProjectsPage = () => {
       </header>
 
       <section className="mx-auto grid min-h-dvh max-w-2xl grid-rows-[auto_1fr]">
-        <div className="grid place-content-center place-items-center gap-12 px-6 py-12">
+        <div className="grid space-y-8 px-6 py-12">
           {projects.map((proj) => (
             <div
               key={proj.id}
               className={twMerge(
-                "shadow-box mx-auto grid w-full place-items-center gap-3 rounded px-4 py-4 lg:grid-cols-2",
+                "bg-dark mx-auto grid w-full place-items-center gap-3 rounded px-4 py-4 lg:grid-cols-2",
                 proj.animate,
               )}
             >

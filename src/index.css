@@ -5,17 +5,17 @@
 @theme {
   --font-main: "JetBrains Mono", system-ui;
 
-  --color-dark: #161513;
-  --color-nav: #222222;
+  --color-dark: #171717;
+  --color-nav: #101010;
   --color-contact: #191919;
-  --color-card: #2a2a2a;
+  --color-card: #121212;
   --color-secondary: #c5c5c5;
   --color-blue: #5badff;
 
   --color-softOrange: #ff8660;
   --color-boldOrange: #d5491d;
 
-  --shadow-box: var(--color-dark) 0px 2px 8px 0px;
+  /* --shadow-box: var(--color-secondary) 0px 2px 8px 0px; */
 
   --animate-fadein: fade linear 1s;
 }
