@@ -1,8 +1,8 @@
-import { getLang } from "../lib";
 import { Contact } from "../components/Contact";
 import { Hero } from "../components/Hero";
 import { Navbar } from "../components/Navbar";
 import { Projects } from "../components/Projects";
+import { getLang } from "../lib";
 
 type LanguageKey = "en" | "fr" | "ar";
 
@@ -13,7 +13,7 @@ const validatedLang: LanguageKey = ["en", "fr", "ar"].includes(lang)
 
 const Home = () => {
   return (
-    <article className="font-main bg-dark text-white">
+    <article className="font-main text-white">
       <main className="grid min-h-dvh grid-rows-[auto_1fr]">
         <Navbar langName={validatedLang} />
         <div className="bg-card">

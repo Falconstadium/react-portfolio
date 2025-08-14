@@ -49,14 +49,14 @@ const LangSelector = ({ langName }) => {
         type="button"
         ref={buttonRef}
         onClick={() => handleClickOutside()}
-        className="hover:bg-card active:bg-card text-secondary flex items-center gap-1 rounded px-2 py-1 font-light transition-colors duration-200 ease-in-out hover:text-white"
+        className="hover:bg-card active:bg-card text-secondary flex items-center rounded px-2 py-1 font-light transition-colors duration-200 ease-in-out hover:text-white"
       >
         {langFullName}
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
+          width="14"
+          height="14"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"

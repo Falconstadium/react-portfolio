@@ -1,7 +1,7 @@
 export const langList = {
-  en: "English",
-  fr: "Français",
-  ar: "العربية",
+  en: "EN",
+  fr: "FR",
+  ar: "ع",
 };
 
 export function getLang() {

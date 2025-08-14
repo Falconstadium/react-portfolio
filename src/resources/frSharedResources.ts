@@ -7,7 +7,7 @@ export const frSharedResources = {
     greeting: "Bonjour, je suis ",
     name: "yassir",
     desc: "Un développeur web basé à Agadir, au Maroc.📍",
-    contact: "prendre contact",
+    contact: "Prendre contact",
     tech: "stack tech",
     link: "cliquez ici pour visiter",
   },

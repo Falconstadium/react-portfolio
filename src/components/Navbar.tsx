@@ -13,14 +13,14 @@ export const Navbar = ({ langName }: NavbarProps) => {
   let lang = langName;
 
   return (
-    <header className="bg-nav w-full px-4 py-2 transition-all duration-300">
+    <header className="bg-nav w-full px-4 py-1 transition-all duration-300">
       <nav className="relative mx-auto flex max-w-3xl items-center justify-between">
         <div className="animate-salla">
           <Link to={"/" + lang}>
-            <img src={pic} alt="logo" loading="lazy" className="h-14 w-14" />
+            <img src={pic} alt="logo" loading="lazy" className="size-12" />
           </Link>
         </div>
-        <ul className="animate-risat flex items-center gap-4 text-xs lg:text-sm">
+        <ul className="animate-risat flex items-center gap-4 text-xs">
           <li>
             <Link
               to={"/" + lang + "/projects"}

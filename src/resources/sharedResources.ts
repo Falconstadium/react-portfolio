@@ -11,7 +11,7 @@ export const resources = {
       greeting: "Hi, I'm ",
       name: "yassir",
       desc: "A Front-End Web Developer based in Agadir, Morocco.📍",
-      contact: "get in touch",
+      contact: "Get in touch",
       tech: "tech stack",
       link: "Click here to visit",
     },
