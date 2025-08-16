@@ -8,11 +8,11 @@ const lang = getLang() as LanguageKey;
 
 export const Hero = () => {
   return (
-    <div className="animate-fadein grid place-content-center place-items-center gap-6 px-6 py-10 xl:py-12">
+    <div className="animate-fadein grid place-content-center place-items-center gap-6 px-6 py-10 xl:py-16">
       <div className="img aspect-square w-48 bg-[url('/me-yassir.jpeg')] bg-cover bg-no-repeat"></div>
       <div className="grid gap-2 text-center">
-        <div>
-          <h1 className="text-2xl font-extrabold tracking-tighter xl:text-3xl">
+        <div className="grid gap-2 md:gap-0">
+          <h1 className="to-secondary bg-gradient-to-b from-white bg-clip-text text-3xl leading-none font-extrabold tracking-tighter text-transparent xl:text-3xl">
             {resources[lang].hero.title}
           </h1>
           <p className="text-secondary text-xs">

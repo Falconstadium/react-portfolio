@@ -16,7 +16,7 @@ const Home = () => {
     <article className="font-main text-white">
       <main className="grid min-h-dvh grid-rows-[auto_1fr]">
         <Navbar langName={validatedLang} />
-        <div className="bg-card">
+        <div className="bg-hero">
           <div className="mx-auto grid min-h-dvh max-w-2xl gap-5">
             <Hero />
             <Projects />

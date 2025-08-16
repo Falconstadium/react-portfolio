@@ -8,8 +8,8 @@ export const Contact = () => {
 
   return (
     <section className="bg-contact px-4 py-12" id="contact">
-      <div className="mx-auto grid max-w-2xl gap-6">
-        <h1 className="text-lg font-bold uppercase lg:text-xl">
+      <div className="mx-auto grid max-w-2xl gap-4">
+        <h1 className="text-lg font-bold tracking-wide uppercase lg:text-xl xl:text-xl">
           {resources[lang].contact.title}
         </h1>
         <p className="flex items-center gap-3">
@@ -35,9 +35,10 @@ export const Contact = () => {
             yassiraterta@gmail.com
           </a>
         </p>
-        <p className="text-secondary text-xs leading-relaxed tracking-wide xl:text-sm">
-          {resources[lang].contact.parag1} <br />{" "}
-          {resources[lang].contact.parag2}
+        <p className="text-secondary grid gap-0.5 text-xs">
+          <span>{resources[lang].contact.parag1}</span>
+          <br />
+          <span>{resources[lang].contact.parag2}</span>
         </p>
         <ul className="flex items-center gap-6 pl-1">
           {socials.map((social) => (

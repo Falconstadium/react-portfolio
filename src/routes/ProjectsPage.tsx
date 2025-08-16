@@ -11,7 +11,7 @@ export const lang = getLang() as LanguageKey;
 
 const ProjectsPage = () => {
   return (
-    <main className="bg-card font-main text-white">
+    <main className="bg-hero font-main text-white">
       <header className="bg-nav px-6 py-5 transition-all duration-30">
         <nav className="mx-auto max-w-3xl">
           <div className="animate-risat">
@@ -64,16 +64,19 @@ const ProjectsPage = () => {
                   <img
                     src={proj.stack1}
                     alt={proj.stack1}
+                    loading="lazy"
                     className="w-6 transition-all duration-300 hover:-translate-y-1"
                   />
                   <img
                     src={proj.stack2}
                     alt={proj.stack2}
+                    loading="lazy"
                     className="w-6 transition-all duration-300 hover:-translate-y-1"
                   />
                   <img
                     src={proj.stack3}
                     alt={proj.stack3}
+                    loading="lazy"
                     className="w-6 transition-all duration-300 hover:-translate-y-1"
                   />
                 </div>
@@ -109,7 +112,7 @@ const ProjectsPage = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     title="github-repo"
-                    className="bg-dark hover:bg-nav active:bg-nav rounded px-2 py-2 transition-all duration-300 hover:scale-110"
+                    className="bg-hero hover:bg-nav active:bg-nav rounded px-2 py-2 transition-all duration-300 hover:scale-110"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
