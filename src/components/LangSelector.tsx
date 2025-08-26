@@ -49,7 +49,7 @@ const LangSelector = ({ langName }) => {
         type="button"
         ref={buttonRef}
         onClick={() => handleClickOutside()}
-        className="hover:bg-card active:bg-card text-secondary flex items-center rounded px-2 py-1 font-light transition-colors duration-200 ease-in-out hover:text-white"
+        className="hover:bg-nav text-secondary flex items-center rounded px-2 py-1 font-light transition-colors duration-200 ease-in-out hover:text-white"
       >
         {langFullName}
 

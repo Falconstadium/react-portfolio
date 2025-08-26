@@ -25,7 +25,7 @@ export const Hero = () => {
             <span> {resources[lang].hero.desc}</span>
           </p>
         </div>
-        <button className="text-dark hover:bg-secondary active:bg-secondary mx-auto mt-2 rounded-2xl bg-white px-4 py-1 text-xs font-semibold transition-colors duration-300 ease-in-out">
+        <button className="text-dark hover:bg-secondary active:bg-secondary mx-auto mt-2 rounded-2xl bg-white px-4 py-2 text-xs font-semibold transition-colors duration-300 ease-in-out">
           <a href="#contact" className="">
             {resources[lang].hero.contact}
           </a>
