@@ -10,10 +10,10 @@ interface NavbarProps {
 }
 
 export const Navbar = ({ langName }: NavbarProps) => {
-  let lang = langName;
+  const lang = langName;
 
   return (
-    <header className="w-full px-4 py-2 transition-all duration-300">
+    <header className="bg-nav w-full px-6 py-3 transition-all duration-300">
       <nav className="relative mx-auto flex max-w-3xl items-center justify-between">
         <div className="animate-salla">
           <Link to={"/" + lang}>

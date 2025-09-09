@@ -10,7 +10,7 @@ export const Projects = () => {
   const lang = getLang() as LanguageKey;
 
   return (
-    <section className="grid place-content-center place-items-center gap-6 pt-6 pb-20">
+    <section className="grid place-content-center place-items-center gap-6 pt-10 pb-20">
       <h1 className="from-softOrange to-boldOrange bg-gradient-to-b bg-clip-text text-xl font-bold text-transparent uppercase">
         {resources[lang].project.title}
       </h1>

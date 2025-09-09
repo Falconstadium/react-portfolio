@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Preloading from "./components/Preloading";
 
 const Home = lazy(() => import("./routes/Home"));
@@ -10,7 +10,7 @@ function Routing() {
   return (
     <Suspense
       fallback={
-        <div className="bg-card grid min-h-dvh place-content-center">
+        <div className="bg-hero grid min-h-dvh place-content-center">
           <Preloading />
         </div>
       }

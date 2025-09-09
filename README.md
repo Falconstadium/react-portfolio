@@ -1,1 +1,3 @@
-THIS IS A PORTFOLIO WEBSITE.
+![image alt](./screenshot.png)
+
+### THIS IS MY PORTFOLIO WEBSITE.

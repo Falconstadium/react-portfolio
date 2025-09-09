@@ -35,7 +35,7 @@ export const Contact = () => {
             yassiraterta@gmail.com
           </a>
         </p>
-        <p className="text-secondary grid gap-0.5 text-xs">
+        <p className="text-secondary text-xs">
           <span>{resources[lang].contact.parag1}</span>
           <br />
           <span>{resources[lang].contact.parag2}</span>
