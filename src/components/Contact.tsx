@@ -9,7 +9,7 @@ export const Contact = () => {
   return (
     <section className="bg-contact px-4 py-12" id="contact">
       <div className="mx-auto grid max-w-2xl gap-4">
-        <h1 className="text-lg font-bold tracking-wide uppercase lg:text-xl xl:text-xl">
+        <h1 className="text-lg font-bold tracking-wide uppercase md:text-xl">
           {resources[lang].contact.title}
         </h1>
         <p className="flex items-center gap-3">
@@ -23,19 +23,19 @@ export const Contact = () => {
             strokeWidth="2.5"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="lucide lucide-mail-icon lucide-mail text-secondary"
+            className="lucide lucide-mail-icon lucide-mail text-neutral-300"
           >
             <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
             <rect x="2" y="4" width="20" height="16" rx="2" />
           </svg>
           <a
             href="mailto:yassiraterta@gmail.com"
-            className="text-secondary text-xs tracking-wide transition-colors duration-300 hover:text-white"
+            className="text-xs tracking-wide text-neutral-200 transition-colors duration-300 hover:text-white"
           >
             yassiraterta@gmail.com
           </a>
         </p>
-        <p className="text-secondary text-xs">
+        <p className="text-xs text-neutral-400">
           <span>{resources[lang].contact.parag1}</span>
           <br />
           <span>{resources[lang].contact.parag2}</span>
@@ -50,7 +50,7 @@ export const Contact = () => {
                 <img
                   src={social.src}
                   alt={social.src}
-                  className="size-5 text-white xl:size-6"
+                  className="size-5 text-white md:size-6"
                 />
               </a>
             </li>

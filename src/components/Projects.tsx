@@ -30,7 +30,7 @@ export const Projects = () => {
               className="flex items-center justify-between px-4"
             >
               <p className="grid">
-                <span className="text-secondary text-xs uppercase">
+                <span className="text-xs text-neutral-400 uppercase">
                   {resources[lang].hero.link}
                 </span>
                 <span className="text-sm font-medium capitalize">

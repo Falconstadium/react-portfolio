@@ -24,26 +24,32 @@ export const tech = [
   {
     id: 1,
     src: html,
+    title: "html",
   },
   {
     id: 2,
     src: css,
+    title: "css",
   },
   {
     id: 3,
     src: js,
+    title: "JavaScript",
   },
   {
     id: 4,
     src: ts,
+    title: "TypeScript",
   },
   {
     id: 5,
     src: tailwind,
+    title: "Tailwind CSS",
   },
   {
     id: 6,
     src: react,
+    title: "React js",
   },
 ];
 

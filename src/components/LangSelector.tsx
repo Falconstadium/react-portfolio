@@ -9,7 +9,7 @@ const LangSelector = ({ langName }) => {
     keyof typeof langList
   >;
 
-  let lang = langName;
+  const lang = langName;
   let pagePath = window.location.pathname.split(lang)[1];
   pagePath = pagePath.split("/")[1];
   if (!pagePath) {
@@ -22,7 +22,7 @@ const LangSelector = ({ langName }) => {
   const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    const handleClickOutside = (event: any) => {
+    const handleClickOutside = (event) => {
       if (
         menuRef.current &&
         !menuRef.current.contains(event.target) &&
@@ -49,7 +49,7 @@ const LangSelector = ({ langName }) => {
         type="button"
         ref={buttonRef}
         onClick={() => handleClickOutside()}
-        className="hover:bg-nav text-secondary flex items-center rounded px-2 py-1 font-light transition-colors duration-200 ease-in-out hover:text-white"
+        className="flex items-center rounded px-2 py-1 font-light text-neutral-300 transition-colors duration-200 ease-in-out hover:text-white"
       >
         {langFullName}
 
@@ -72,7 +72,7 @@ const LangSelector = ({ langName }) => {
         {showLngMenu ? (
           <motion.div
             ref={menuRef}
-            className={`shadow-box bg-secondary text-dark absolute top-10 grid gap-2 rounded-sm py-1 ${lang == "ar" ? "left-0 origin-top-left" : "right-1 origin-top-right"}`}
+            className={`text-dark absolute top-10 grid gap-2 rounded-sm bg-neutral-900 py-1 shadow-sm shadow-neutral-700 ${lang == "ar" ? "left-0 origin-top-left" : "right-1 origin-top-right"}`}
             initial={{ opacity: 0, scale: 0, translateY: -20 }}
             animate={{ opacity: 1, scale: 1, translateY: 0 }}
             exit={{ opacity: 0, scale: 0, translateY: -20 }}
@@ -81,7 +81,7 @@ const LangSelector = ({ langName }) => {
             {langKeys.map((l) => (
               <div
                 key={l}
-                className="grid px-3 py-0.5 text-center transition-all duration-200 ease-in-out hover:scale-105 hover:bg-white active:bg-white"
+                className="grid px-3 py-0.5 text-center transition-all duration-200 ease-in-out hover:scale-105 hover:bg-neutral-700 active:bg-white"
               >
                 <a
                   href={"/" + l + pathName}

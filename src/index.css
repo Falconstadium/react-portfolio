@@ -5,25 +5,22 @@
 @theme {
   --font-main: "JetBrains Mono", system-ui;
 
-  --color-dark: #191919;
-  --color-nav: #0c0c0c;
-  --color-hero: #121212;
-  --color-contact: #161616;
+  --color-nav: #222222;
+  --color-hero: #2a2a2a;
+  --color-contact: #191919;
   --color-secondary: #c5c5c5;
   --color-blue: #5badff;
 
   --color-softOrange: #ff8660;
   --color-boldOrange: #d5491d;
 
-  /* --shadow-box: var(--color-secondary) 0px 2px 8px 0px; */
-
   --animate-fadein: fade linear 1s;
 }
 
 .img {
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  box-shadow: var(--color-dark) 0px 8px 24px;
-  border: 2px solid var(--color-dark);
+  box-shadow: var(--color-contact) 0px 8px 24px;
+  border: 2px solid var(--color-contact);
   position: relative;
   transition: all 1s ease-in-out;
   animation: alpha 8s ease-in-out infinite;
