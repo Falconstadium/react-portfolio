@@ -1,37 +1,28 @@
-import { Link } from "react-router-dom";
-
-import { resources } from "../resources/sharedResources";
-
-import LangSelector from "./LangSelector";
-import pic from "/y.svg";
-
-interface NavbarProps {
-  langName: keyof typeof resources;
-}
-
-export const Navbar = ({ langName }: NavbarProps) => {
-  const lang = langName;
-
+export const Navbar = () => {
   return (
-    <header className="bg-nav w-full px-6 py-3 transition-all duration-300">
-      <nav className="relative mx-auto flex max-w-3xl items-center justify-between">
-        <div className="animate-salla">
-          <Link to={"/" + lang}>
-            <img src={pic} alt="logo" loading="lazy" className="size-12" />
-          </Link>
-        </div>
-        <ul className="animate-risat flex items-center gap-4 text-xs">
+    <header className="px-6 py-4">
+      <nav className="mx-auto max-w-4xl">
+        <ul className="flex items-center justify-end gap-6 text-sm text-neutral-400">
           <li>
-            <Link
-              to={"/" + lang + "/projects"}
-              className="transition-all duration-300 hover:font-medium active:font-medium"
+            <a
+              href="https://www.linkedin.com/in/yassiraterta"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors duration-300 hover:text-white"
             >
-              {resources[lang].project.title}
-            </Link>
+              Linkedin
+            </a>
           </li>
-
-          {/* lang menu */}
-          <LangSelector langName={langName} />
+          <li>
+            <a
+              href="https://github.com/Falconstadium"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors duration-300 hover:text-white"
+            >
+              Github
+            </a>
+          </li>
         </ul>
       </nav>
     </header>

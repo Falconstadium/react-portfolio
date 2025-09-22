@@ -49,7 +49,7 @@ const LangSelector = ({ langName }) => {
         type="button"
         ref={buttonRef}
         onClick={() => handleClickOutside()}
-        className="flex items-center rounded px-2 py-1 font-light text-neutral-300 transition-colors duration-200 ease-in-out hover:text-white"
+        className="flex items-center gap-0.5 rounded px-2 py-1 text-sm font-medium text-neutral-300 transition-colors duration-200 ease-in-out hover:text-rose-500 focus:text-rose-500"
       >
         {langFullName}
 
@@ -63,7 +63,7 @@ const LangSelector = ({ langName }) => {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className={`lucide lucide-chevron-up-icon lucide-chevron-up transition-all duration-300 ${showLngMenu ? (lang == "ar" ? "rotate-180" : "-rotate-180") : ""}`}
+          className={`lucide lucide-chevron-up-icon lucide-chevron-up transition duration-300 ${showLngMenu ? (lang == "ar" ? "rotate-180" : "-rotate-180") : ""}`}
         >
           <path d="m6 9 6 6 6-6" />
         </svg>
@@ -72,7 +72,7 @@ const LangSelector = ({ langName }) => {
         {showLngMenu ? (
           <motion.div
             ref={menuRef}
-            className={`text-dark absolute top-10 grid gap-2 rounded-sm bg-neutral-900 py-1 shadow-sm shadow-neutral-700 ${lang == "ar" ? "left-0 origin-top-left" : "right-1 origin-top-right"}`}
+            className={`absolute -top-6 grid gap-2 rounded-sm bg-gray-900 py-1 text-white ${lang == "ar" ? "left-0 origin-top-left" : "right-1 origin-top-right"}`}
             initial={{ opacity: 0, scale: 0, translateY: -20 }}
             animate={{ opacity: 1, scale: 1, translateY: 0 }}
             exit={{ opacity: 0, scale: 0, translateY: -20 }}
@@ -81,12 +81,9 @@ const LangSelector = ({ langName }) => {
             {langKeys.map((l) => (
               <div
                 key={l}
-                className="grid px-3 py-0.5 text-center transition-all duration-200 ease-in-out hover:scale-105 hover:bg-neutral-700 active:bg-white"
+                className="grid px-3 py-0.5 text-center transition duration-200 ease-in-out hover:scale-105 hover:bg-neutral-600"
               >
-                <a
-                  href={"/" + l + pathName}
-                  className="text-xs hover:font-medium active:font-medium"
-                >
+                <a href={"/" + l + pathName} className="text-xs">
                   {langList[l]}
                 </a>
               </div>
