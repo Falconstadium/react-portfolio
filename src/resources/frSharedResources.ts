@@ -9,14 +9,11 @@ export const frSharedResources = {
     desc: "Un développeur web basé à Agadir, au Maroc.📍",
     contact: "Prendre contact",
     tech: "stack tech",
-    link: "cliquez ici pour visiter",
+    link: "Cliquez ici pour visiter",
   },
   contact: {
     title: "contact",
-    parag1:
-      "Développeur web front-end, se concentrant sur le développement de belles UI et UX.",
-    parag2:
-      "Ma pile principale est actuellement React en combinaison avec Tailwind CSS et TypeScript.",
+    parag2: "N'hésiter pas à me contacter! 👇",
   },
   project: {
     title: "Projets",
@@ -26,7 +23,7 @@ export const frSharedResources = {
     },
     salla: {
       title: "site e-commerce",
-      desc: "Salla est un site de commerce électronique. Ce projet est réalisé avec Next.js et Shadcn-UI.",
+      desc: "Shopper store est un site de commerce électronique. Ce site est construit en utilisant fake store API avec tanstack query pour récupérer des données et Zustand pour la gestion par l’État.",
     },
     dentalab: {
       title: "landing page",

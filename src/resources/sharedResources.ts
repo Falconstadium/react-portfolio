@@ -7,30 +7,28 @@ export const resources = {
       name: "Yassir Aterta",
     },
     hero: {
-      title: "Front-End Web Developer.",
+      title:
+        "Front-end Web Developer, focusing on developing beautiful UI and UX,",
       greeting: "Hi, I'm ",
       name: "yassir",
-      desc: "A Front-End Web Developer based in Agadir, Morocco.📍",
+      desc: " based in Agadir, Morocco.📍",
       contact: "Get in touch",
       tech: "tech stack",
       link: "Click here to visit",
     },
     contact: {
       title: "contact",
-      parag1:
-        "Front-end web developer, focusing on developing beautiful UI and UX.",
-      parag2:
-        "My main stack currently is React in combination with Tailwind CSS and TypeScript.",
+      parag2: "Don't hesitate to contact me! 👇",
     },
     project: {
       title: "Projects",
       risat: {
         title: "personal project",
-        desc: "I have always wanted a platform that combines multiple tools and utilises them daily, which is why I created this website.",
+        desc: "I've always wanted a platform that combines multiple tools and utilises them daily, which is why I created this website.",
       },
       salla: {
-        title: "e-commerce website",
-        desc: "Salla is an ecommerce site. This project uses Next.js and Shadcn-UI.",
+        title: "e-commerce site",
+        desc: "Shopper store is an ecommerce site. This site is built using fake store api with tanstack query to fetch data and zustand for state management.",
       },
       dentalab: {
         title: "landing page",
