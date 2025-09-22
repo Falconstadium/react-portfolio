@@ -2,34 +2,26 @@ import { lazy, Suspense } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Preloading from "./components/Preloading";
 
-const Home = lazy(() => import("./routes/Home"));
-const ProjectsPage = lazy(() => import("./routes/ProjectsPage"));
-const NotFound = lazy(() => import("./routes/NotFound"));
-
-function Routing() {
-  return (
-    <Suspense
-      fallback={
-        <div className="bg-hero grid min-h-dvh place-content-center">
-          <Preloading />
-        </div>
-      }
-    >
-      <Routes>
-        <Route path="/" element={<Navigate to="/en/" replace />} />
-        <Route path="/:lang/" element={<Home />} />
-        <Route path="/:lang/projects" element={<ProjectsPage />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Suspense>
-  );
-}
+const Home = lazy(() => import("./pages/Home"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Routing />
+        <Suspense
+          fallback={
+            <div className="grid min-h-dvh place-content-center bg-gray-950">
+              <Preloading />
+            </div>
+          }
+        >
+          <Routes>
+            <Route path="/" element={<Navigate to="/en/" replace />} />
+            <Route path="/:lang/" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
       </BrowserRouter>
     </>
   );
