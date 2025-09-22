@@ -2,67 +2,36 @@ import type { LanguageKey } from "../components/Hero";
 import { getLang } from "../lib";
 import { resources } from "../resources/sharedResources";
 
-import css from "/CSS.svg";
-import html from "/HTML.svg";
-import js from "/JavaScript.svg";
-import next from "/NextJS-Light.svg";
-import react from "/React-Dark.svg";
-import tailwind from "/TailwindCSS-Dark.svg";
-import ts from "/TypeScript.svg";
+import css from "./CSS.svg";
+import html from "./HTML.svg";
+import js from "./JavaScript.svg";
+import react from "./React-Dark.svg";
+import tailwind from "./TailwindCSS-Dark.svg";
+import ts from "./TypeScript.svg";
 
 import dentalab from "/dentalab.jpeg";
-import rayyan from "/rayyan.jpeg";
 import risat from "/risat.jpeg";
-import salla from "/salla.jpeg";
-
-import github from "/github.svg";
-import linkedin from "/linkedin-1.svg";
+import shopper from "/shopper.png";
 
 const lang = getLang() as LanguageKey;
 
 export const tech = [
   {
     id: 1,
-    src: html,
-    title: "html",
+    title: "JavaScript",
   },
+
   {
     id: 2,
-    src: css,
-    title: "css",
+    title: "React.js",
   },
   {
     id: 3,
-    src: js,
-    title: "JavaScript",
-  },
-  {
-    id: 4,
-    src: ts,
-    title: "TypeScript",
-  },
-  {
-    id: 5,
-    src: tailwind,
     title: "Tailwind CSS",
   },
   {
-    id: 6,
-    src: react,
-    title: "React js",
-  },
-];
-
-export const socials = [
-  {
-    id: 1,
-    src: github,
-    link: "https://github.com/Falconstadium",
-  },
-  {
-    id: 2,
-    src: linkedin,
-    link: "https://www.linkedin.com/in/yassiraterta",
+    id: 4,
+    title: "Redux",
   },
 ];
 
@@ -75,52 +44,33 @@ export const projects = [
     desc: `${resources[lang].project.risat.desc}`,
     link: "https://risat.vercel.app/",
     githubRepo: "https://github.com/Falconstadium/risat",
-    className: `${lang == "ar" ? "pr-6" : ""}`,
-    animate: "animate-salla",
     stack1: react,
     stack2: ts,
     stack3: tailwind,
   },
   {
     id: 2,
+    src: shopper,
+    name: "shopper-store",
+    title: `${resources[lang].project.salla.title}`,
+    desc: `${resources[lang].project.salla.desc}`,
+    link: "https://shopper-estore.vercel.app/",
+    githubRepo: "https://github.com/Falconstadium/shopper-store",
+    className: "md:-order-1",
+    stack1: react,
+    stack2: ts,
+    stack3: tailwind,
+  },
+  {
+    id: 3,
     src: dentalab,
     name: "dentalab",
     title: `${resources[lang].project.dentalab.title}`,
     desc: `${resources[lang].project.dentalab.desc}`,
     link: "https://dentalab.vercel.app/",
     githubRepo: "https://github.com/Falconstadium/DENTALAB",
-    className: `lg:-order-1 ${lang == "ar" ? "pr-6" : ""}`,
-    animate: "animate-risat",
     stack1: html,
     stack2: css,
     stack3: js,
-  },
-  {
-    id: 3,
-    src: salla,
-    name: "salla",
-    title: `${resources[lang].project.salla.title}`,
-    desc: `${resources[lang].project.salla.desc}`,
-    link: "https://salla-ten.vercel.app/",
-    githubRepo: "https://github.com/Falconstadium/salla",
-    className: ` ${lang == "ar" ? "pr-6" : ""}`,
-    animate: "animate-salla",
-    stack1: next,
-    stack2: ts,
-    stack3: tailwind,
-  },
-  {
-    id: 4,
-    src: rayyan,
-    name: "al rayyan",
-    title: `${resources[lang].project.rayyan.title}`,
-    desc: `${resources[lang].project.rayyan.desc}`,
-    link: "https://al-rayaan.netlify.app/",
-    githubRepo: "https://github.com/Falconstadium/al-rayyan",
-    className: `lg:-order-1 ${lang == "ar" ? "pr-6" : ""}`,
-    animate: "animate-risat",
-    stack1: react,
-    stack2: ts,
-    stack3: tailwind,
   },
 ];
