@@ -1,20 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "tailwindcss";
 
 @theme {
-  --font-main: "JetBrains Mono", system-ui;
-
-  --color-nav: #222222;
-  --color-hero: #2a2a2a;
-  --color-contact: #191919;
-  --color-secondary: #c5c5c5;
-  --color-blue: #5badff;
-
-  --color-softOrange: #ff8660;
-  --color-boldOrange: #d5491d;
-
+  --font-main: "Roboto", system-ui;
   --animate-fadein: fade linear 1s;
+  --shadow-dark: rgba(149, 157, 165, 0.1) 0px 8px 24px;
 }
 
 .img {
