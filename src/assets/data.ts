@@ -2,16 +2,9 @@ import type { LanguageKey } from "../components/Hero";
 import { getLang } from "../lib";
 import { resources } from "../resources/sharedResources";
 
-import css from "./CSS.svg";
-import html from "./HTML.svg";
-import js from "./JavaScript.svg";
-import react from "./React-Dark.svg";
-import tailwind from "./TailwindCSS-Dark.svg";
-import ts from "./TypeScript.svg";
-
-import dentalab from "/dentalab.jpeg";
-import risat from "/risat.jpeg";
-import shopper from "/shopper.png";
+import dentalab from "./dentalab.jpeg";
+import risat from "./risat.jpeg";
+import shopper from "./shopper.png";
 
 const lang = getLang() as LanguageKey;
 
@@ -20,18 +13,21 @@ export const tech = [
     id: 1,
     title: "JavaScript",
   },
-
   {
     id: 2,
     title: "React.js",
   },
   {
     id: 3,
-    title: "Tailwind CSS",
+    title: "CSS",
   },
   {
     id: 4,
-    title: "Redux",
+    title: "Zustand",
+  },
+  {
+    id: 5,
+    title: "UI/UX",
   },
 ];
 
@@ -44,9 +40,7 @@ export const projects = [
     desc: `${resources[lang].project.risat.desc}`,
     link: "https://risat.vercel.app/",
     githubRepo: "https://github.com/Falconstadium/risat",
-    stack1: react,
-    stack2: ts,
-    stack3: tailwind,
+    stack: "React, TypeScript, Tailwind CSS, Tanstack Router",
   },
   {
     id: 2,
@@ -56,10 +50,8 @@ export const projects = [
     desc: `${resources[lang].project.salla.desc}`,
     link: "https://shopper-estore.vercel.app/",
     githubRepo: "https://github.com/Falconstadium/shopper-store",
-    className: "md:-order-1",
-    stack1: react,
-    stack2: ts,
-    stack3: tailwind,
+    stack:
+      "React, TypeScript, Tailwind CSS, Zustand, Tanstack Router, Tanstack Query",
   },
   {
     id: 3,
@@ -69,8 +61,6 @@ export const projects = [
     desc: `${resources[lang].project.dentalab.desc}`,
     link: "https://dentalab.vercel.app/",
     githubRepo: "https://github.com/Falconstadium/DENTALAB",
-    stack1: html,
-    stack2: css,
-    stack3: js,
+    stack: "Html, CSS, JavaScript, AOS",
   },
 ];

@@ -45,7 +45,10 @@ const LangSelector = ({ langName }) => {
 
   return (
     <>
-      <button
+      <motion.button
+        initial={{ x: 50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 0.2 }}
         type="button"
         ref={buttonRef}
         onClick={() => handleClickOutside()}
@@ -67,7 +70,7 @@ const LangSelector = ({ langName }) => {
         >
           <path d="m6 9 6 6 6-6" />
         </svg>
-      </button>
+      </motion.button>
       <AnimatePresence mode="wait">
         {showLngMenu ? (
           <motion.div

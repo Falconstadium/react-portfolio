@@ -3,7 +3,8 @@ export const frSharedResources = {
     name: "Yassir Aterta",
   },
   hero: {
-    title: "Développeur Web Front-End.",
+    title:
+      "Développeur Web front-end, se concentrant sur le développement de belles UI et UX, basé à Agadir, au Maroc.",
     greeting: "Bonjour, je suis ",
     name: "yassir",
     desc: "Un développeur web basé à Agadir, au Maroc.📍",
@@ -27,7 +28,7 @@ export const frSharedResources = {
     },
     dentalab: {
       title: "landing page",
-      desc: "DENTALAB est une page d’accueil pour une clinique dentaire",
+      desc: "DENTALAB est une page d’accueil pour une clinique dentaire, elle comprend une brève introduction et certains de leurs services.",
     },
     rayyan: {
       title: "al rayyan miel",

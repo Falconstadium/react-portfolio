@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { getLang } from "../lib";
 import { resources } from "../resources/sharedResources";
 import type { LanguageKey } from "./Hero";
@@ -13,13 +14,22 @@ export const Contact = () => {
     <section className="bg-gray-950/40 px-6 py-10" id="contact">
       <div className="relative mx-auto flex max-w-4xl items-end justify-between">
         <div className="grid gap-4">
-          <h1 className="font-bold tracking-wide uppercase">
-            {resources[lang].contact.title}
-          </h1>
-          <p className="text-sm text-neutral-300">
+          <motion.p
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.3, delay: 0.2 }}
+            className="text-sm font-medium text-white"
+          >
             {resources[lang].contact.parag2}
-          </p>
-          <p className="flex items-center gap-3">
+          </motion.p>
+          <motion.div
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.3, delay: 0.4 }}
+            className="flex items-center gap-3 text-neutral-400 transition-colors duration-300 hover:text-white"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="15"
@@ -30,18 +40,18 @@ export const Contact = () => {
               strokeWidth="2.5"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-mail-icon lucide-mail text-neutral-300"
+              className="lucide lucide-mail-icon lucide-mail"
             >
               <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
               <rect x="2" y="4" width="20" height="16" rx="2" />
             </svg>
             <a
               href="mailto:yassiraterta@gmail.com"
-              className="text-xs tracking-wide text-neutral-400 transition-colors duration-300 hover:text-white"
+              className="text-xs tracking-wide"
             >
               yassiraterta@gmail.com
             </a>
-          </p>
+          </motion.div>
         </div>
         <LangSelector langName={validatedLang} />
       </div>

@@ -1,3 +1,3 @@
 ![image alt](./screenshot.png)
 
-### THIS IS MY PORTFOLIO WEBSITE.
+#### This is my portfolio website.

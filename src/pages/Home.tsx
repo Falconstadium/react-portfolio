@@ -1,19 +1,74 @@
+import {
+  AnimatePresence,
+  domAnimation,
+  LazyMotion,
+  motion,
+} from "framer-motion";
+import { useEffect, useState } from "react";
 import { Contact } from "../components/Contact";
-import { Hero } from "../components/Hero";
+import { Hero, type LanguageKey } from "../components/Hero";
 import { Navbar } from "../components/Navbar";
 import { Projects } from "../components/Projects";
+import { getLang } from "../lib";
 
 const Home = () => {
+  const lang = getLang() as LanguageKey;
+
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setShow(window.scrollY >= 10);
+    });
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <main className="grid min-h-dvh grid-rows-[auto_1fr] bg-neutral-950 text-gray-50">
-      <Navbar />
-      <div>
-        <div className="mx-auto grid min-h-dvh gap-12 py-10">
-          <Hero />
-          <Projects />
+    <main className="grid min-h-dvh grid-rows-[auto_1fr]">
+      <LazyMotion features={domAnimation}>
+        <Navbar />
+        <div>
+          <div className="mx-auto grid min-h-dvh gap-12 py-4">
+            <Hero />
+            <Projects />
+          </div>
         </div>
-      </div>
-      <Contact />
+        <Contact />
+        <AnimatePresence mode="wait">
+          {show && (
+            <motion.button
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 50 }}
+              transition={{ duration: 0.5 }}
+              type="button"
+              className={`fixed bottom-3 rounded-full bg-blue-600 p-1 transition-colors duration-300 hover:bg-blue-500 md:bottom-6 ${lang == "ar" ? "left-4 md:left-5" : "right-4 md:right-5"}`}
+              onClick={scrollToTop}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-arrow-up-icon lucide-arrow-up"
+              >
+                <path d="m5 12 7-7 7 7" />
+                <path d="M12 19V5" />
+              </svg>
+            </motion.button>
+          )}
+        </AnimatePresence>
+      </LazyMotion>
     </main>
   );
 };

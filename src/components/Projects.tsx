@@ -1,35 +1,45 @@
-import { twMerge } from "tailwind-merge";
+import { motion } from "framer-motion";
 import { projects } from "../assets/data";
 import { getLang } from "../lib";
 import { resources } from "../resources/sharedResources";
 import type { LanguageKey } from "./Hero";
 
 export const Projects = () => {
-  // show only 2 projects on the screen.
   const lang = getLang() as LanguageKey;
 
   return (
-    <section className="mx-auto grid max-w-3xl place-content-center place-items-center gap-6 px-4 py-12">
-      <h1 className="font-semibold text-rose-500 uppercase">
+    <section className="mx-auto grid max-w-xl place-content-center place-items-center gap-6 px-4 py-12">
+      <motion.h1
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1 }}
+        className="font-semibold text-rose-500 uppercase"
+      >
         {resources[lang].project.title}
-      </h1>
+      </motion.h1>
       <div className="grid gap-10">
         {projects.map((pro) => (
-          <div
-            className="shadow-dark grid gap-3 rounded-sm px-4 py-2 md:grid-cols-2"
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 1 }}
+            className="shadow-dark grid gap-3 rounded px-4 py-2"
             key={pro.id}
           >
             <img
               src={pro.src}
               alt={pro.src}
               loading="lazy"
-              className="h-52 w-full rounded object-cover object-top transition-all duration-500 hover:object-bottom active:object-bottom md:h-48 md:w-96"
+              className="h-52 w-full rounded-sm object-cover object-top transition-all duration-1000 hover:object-bottom active:object-bottom md:h-[260px]"
             />
-            <div className={twMerge("grid gap-3 px-4 py-2", pro.className)}>
+            <div className="grid place-content-center space-y-4 px-4 py-2">
               <h3 className="text-sm font-medium capitalize">
                 {pro.name}: {pro.title}
               </h3>
               <p className="text-sm text-neutral-400">{pro.desc}</p>
+              <p className="text-sm font-light text-neutral-400">{pro.stack}</p>
               <div className="flex items-center justify-center gap-4">
                 <a
                   href={pro.link}
@@ -67,7 +77,7 @@ export const Projects = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    strokeWidth="2"
+                    strokeWidth="2.5"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     className="lucide lucide-github-icon lucide-github text-gray-950"
@@ -80,31 +90,8 @@ export const Projects = () => {
                   </p>
                 </a>
               </div>
-              <ul className="flex items-center justify-center gap-3">
-                <li>
-                  <img
-                    src={pro.stack1}
-                    alt={pro.title}
-                    className="size-6 object-cover transition duration-300 hover:-translate-y-1"
-                  />
-                </li>
-                <li>
-                  <img
-                    src={pro.stack2}
-                    alt={pro.title}
-                    className="size-6 object-cover transition duration-300 hover:-translate-y-1"
-                  />
-                </li>
-                <li>
-                  <img
-                    src={pro.stack3}
-                    alt={pro.title}
-                    className="size-6 object-cover transition duration-300 hover:-translate-y-1"
-                  />
-                </li>
-              </ul>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
+
 export const Navbar = () => {
   return (
-    <header className="px-6 py-4">
+    <header className="px-6 py-8">
       <nav className="mx-auto max-w-4xl">
-        <ul className="flex items-center justify-end gap-6 text-sm text-neutral-400">
-          <li>
+        <ul className="flex items-center justify-end gap-8 text-sm text-neutral-400">
+          <motion.li
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
             <a
               href="https://www.linkedin.com/in/yassiraterta"
               target="_blank"
@@ -12,8 +18,12 @@ export const Navbar = () => {
             >
               Linkedin
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
             <a
               href="https://github.com/Falconstadium"
               target="_blank"
@@ -22,7 +32,7 @@ export const Navbar = () => {
             >
               Github
             </a>
-          </li>
+          </motion.li>
         </ul>
       </nav>
     </header>

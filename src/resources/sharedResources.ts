@@ -8,11 +8,11 @@ export const resources = {
     },
     hero: {
       title:
-        "Front-end Web Developer, focusing on developing beautiful UI and UX,",
+        "Front-end Developer, focusing on developing and creating beautiful UI and UX,",
       greeting: "Hi, I'm ",
       name: "yassir",
       desc: " based in Agadir, Morocco.📍",
-      contact: "Get in touch",
+      contact: "Get in Touch",
       tech: "tech stack",
       link: "Click here to visit",
     },
@@ -32,7 +32,7 @@ export const resources = {
       },
       dentalab: {
         title: "landing page",
-        desc: "DENTALAB is a landing page for a dental clinic",
+        desc: "DENTALAB is a landing page for a dental clinic, it includes a brief introduction and some of their services.",
       },
       rayyan: {
         title: "al rayyan honey",
