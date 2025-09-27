@@ -38,6 +38,7 @@ const Home = () => {
             <Projects />
           </div>
         </div>
+        <div className="mx-auto h-[1px] w-[95%] bg-neutral-700 md:w-1/2" />
         <Contact />
         <AnimatePresence mode="wait">
           {show && (

@@ -12,7 +12,7 @@ export const Projects = () => {
       <motion.h1
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 1 }}
         className="font-semibold text-rose-500 uppercase"
       >

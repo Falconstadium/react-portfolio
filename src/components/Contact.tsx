@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { getLang } from "../lib";
-import { resources } from "../resources/sharedResources";
 import type { LanguageKey } from "./Hero";
 import LangSelector from "./LangSelector";
 
@@ -12,21 +11,12 @@ export const Contact = () => {
 
   return (
     <section className="bg-gray-950/40 px-6 py-10" id="contact">
-      <div className="relative mx-auto flex max-w-4xl items-end justify-between">
+      <div className="relative mx-auto flex max-w-xl items-center justify-between">
         <div className="grid gap-4">
-          <motion.p
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.3, delay: 0.2 }}
-            className="text-sm font-medium text-white"
-          >
-            {resources[lang].contact.parag2}
-          </motion.p>
           <motion.div
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            viewport={{ once: true, amount: 0.5 }}
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.3, delay: 0.4 }}
             className="flex items-center gap-3 text-neutral-400 transition-colors duration-300 hover:text-white"
           >
@@ -47,7 +37,7 @@ export const Contact = () => {
             </svg>
             <a
               href="mailto:yassiraterta@gmail.com"
-              className="text-xs tracking-wide"
+              className="text-xs tracking-wide md:text-sm"
             >
               yassiraterta@gmail.com
             </a>

@@ -46,13 +46,13 @@ const LangSelector = ({ langName }) => {
   return (
     <>
       <motion.button
-        initial={{ x: 50, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.2 }}
         type="button"
         ref={buttonRef}
         onClick={() => handleClickOutside()}
-        className="flex items-center gap-0.5 rounded px-2 py-1 text-sm font-medium text-neutral-300 transition-colors duration-200 ease-in-out hover:text-rose-500 focus:text-rose-500"
+        className="flex items-center gap-0.5 rounded px-2 py-1 text-sm text-neutral-100 transition-colors duration-200 ease-in-out hover:text-rose-500 focus:text-rose-500"
       >
         {langFullName}
 
