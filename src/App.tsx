@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Suspense
           fallback={
-            <div className="grid min-h-dvh place-content-center bg-gray-950">
+            <div className="grid min-h-dvh place-content-center bg-neutral-950">
               <Preloading />
             </div>
           }

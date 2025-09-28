@@ -45,7 +45,7 @@ export const Projects = () => {
                   href={pro.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1 rounded bg-blue-700 px-3 py-1.5 text-xs font-medium transition duration-300 hover:bg-blue-600"
+                  className="flex items-center gap-1 rounded bg-blue-700 px-3 py-1.5 text-xs font-medium transition duration-300 hover:bg-blue-600 active:bg-blue-600"
                 >
                   {resources[lang].hero.link}
                   <svg
@@ -68,7 +68,7 @@ export const Projects = () => {
                   href={pro.githubRepo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1 rounded bg-white px-3 py-1.5 transition duration-300 hover:bg-gray-300"
+                  className="flex items-center gap-1 rounded bg-white px-3 py-1.5 transition duration-300 hover:bg-gray-300 active:bg-gray-300"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

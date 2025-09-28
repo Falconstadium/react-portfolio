@@ -6,14 +6,11 @@ import {
 } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Contact } from "../components/Contact";
-import { Hero, type LanguageKey } from "../components/Hero";
+import { Hero } from "../components/Hero";
 import { Navbar } from "../components/Navbar";
 import { Projects } from "../components/Projects";
-import { getLang } from "../lib";
 
 const Home = () => {
-  const lang = getLang() as LanguageKey;
-
   const [show, setShow] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -38,7 +35,7 @@ const Home = () => {
             <Projects />
           </div>
         </div>
-        <div className="mx-auto h-[1px] w-[95%] bg-neutral-700 md:w-1/2" />
+        <div className="mx-auto h-[1px] w-[95%] bg-neutral-800 md:w-1/2" />
         <Contact />
         <AnimatePresence mode="wait">
           {show && (
@@ -48,7 +45,7 @@ const Home = () => {
               exit={{ opacity: 0, y: 50 }}
               transition={{ duration: 0.5 }}
               type="button"
-              className={`fixed bottom-3 rounded-full bg-blue-600 p-1 transition-colors duration-300 hover:bg-blue-500 md:bottom-6 ${lang == "ar" ? "left-4 md:left-5" : "right-4 md:right-5"}`}
+              className={`md:bottom-8} fixed right-4 bottom-14 rounded-full bg-blue-600 p-1 transition-colors duration-300 hover:bg-blue-500 md:right-8`}
               onClick={scrollToTop}
             >
               <svg

@@ -48,7 +48,7 @@ const LangSelector = ({ langName }) => {
       <motion.button
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 0.2 }}
+        transition={{ duration: 0.3, delay: 0.05 }}
         type="button"
         ref={buttonRef}
         onClick={() => handleClickOutside()}
@@ -58,8 +58,8 @@ const LangSelector = ({ langName }) => {
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="14"
-          height="14"
+          width="12"
+          height="12"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -75,7 +75,7 @@ const LangSelector = ({ langName }) => {
         {showLngMenu ? (
           <motion.div
             ref={menuRef}
-            className={`absolute -top-6 grid gap-2 rounded-sm bg-gray-900 py-1 text-white ${lang == "ar" ? "left-0 origin-top-left" : "right-1 origin-top-right"}`}
+            className={`absolute bottom-8 z-10 grid gap-2 rounded-sm bg-neutral-900 py-1.5 text-white ${lang == "ar" ? "right-0" : "right-2"}`}
             initial={{ opacity: 0, scale: 0, translateY: -20 }}
             animate={{ opacity: 1, scale: 1, translateY: 0 }}
             exit={{ opacity: 0, scale: 0, translateY: -20 }}
@@ -84,7 +84,7 @@ const LangSelector = ({ langName }) => {
             {langKeys.map((l) => (
               <div
                 key={l}
-                className="grid px-3 py-0.5 text-center transition duration-200 ease-in-out hover:scale-105 hover:bg-neutral-600"
+                className="grid px-3 py-0.5 text-center transition duration-200 ease-in-out hover:scale-105 hover:bg-gray-700 active:bg-gray-700"
               >
                 <a href={"/" + l + pathName} className="text-xs">
                   {langList[l]}

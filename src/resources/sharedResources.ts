@@ -8,7 +8,7 @@ export const resources = {
     },
     hero: {
       title:
-        "Front-end Developer, focusing on developing and creating beautiful UI and UX,",
+        "Front-end Developer, focusing on developing and creating responsive beautiful UI and UX.",
       greeting: "Hi, I'm ",
       name: "yassir",
       desc: " based in Agadir, Morocco.📍",

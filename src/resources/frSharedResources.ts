@@ -4,10 +4,10 @@ export const frSharedResources = {
   },
   hero: {
     title:
-      "Développeur Web front-end, se concentrant sur le développement de belles UI et UX, basé à Agadir, au Maroc.",
+      "Développeur Front-End, se concentrant sur le développement et la création d’UI et d’UX réactifs et esthétiques. ",
     greeting: "Bonjour, je suis ",
     name: "yassir",
-    desc: "Un développeur web basé à Agadir, au Maroc.📍",
+    desc: "basé à Agadir, au Maroc.📍",
     contact: "Prendre contact",
     tech: "stack tech",
     link: "Cliquez ici pour visiter",
