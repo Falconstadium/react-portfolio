@@ -14,7 +14,7 @@ export const Hero = () => {
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.3, ease: "easeIn" }}
-        className="img shadow-dark mx-auto mb-4 size-32 bg-[url('./assets/hero-pic.jpg')] bg-cover bg-center bg-no-repeat md:mx-0"
+        className="img shadow-dark mx-auto mb-4 size-32 bg-[url('/hero-pic.jpg')] bg-cover bg-center bg-no-repeat md:mx-0"
       />
       <motion.h1
         initial={{ x: 50, opacity: 0 }}

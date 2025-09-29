@@ -75,7 +75,7 @@ const LangSelector = ({ langName }) => {
         {showLngMenu ? (
           <motion.div
             ref={menuRef}
-            className={`absolute bottom-8 z-10 grid gap-2 rounded-sm bg-neutral-900 py-1.5 text-white ${lang == "ar" ? "right-0" : "right-2"}`}
+            className={`absolute bottom-8 z-10 grid origin-bottom-right gap-2 rounded-sm bg-neutral-900 py-1.5 text-white ${lang == "ar" ? "right-0" : "right-2"}`}
             initial={{ opacity: 0, scale: 0, translateY: -20 }}
             animate={{ opacity: 1, scale: 1, translateY: 0 }}
             exit={{ opacity: 0, scale: 0, translateY: -20 }}

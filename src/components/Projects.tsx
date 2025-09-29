@@ -30,7 +30,7 @@ export const Projects = () => {
           >
             <img
               src={pro.src}
-              alt={pro.src}
+              alt={pro.name}
               loading="lazy"
               className="h-52 w-full rounded-sm object-cover object-top transition-all duration-1000 hover:object-bottom active:object-bottom md:h-[260px]"
             />
@@ -68,7 +68,7 @@ export const Projects = () => {
                   href={pro.githubRepo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1 rounded bg-white px-3 py-1.5 transition duration-300 hover:bg-gray-300 active:bg-gray-300"
+                  className="flex items-center gap-1 rounded bg-white px-3 py-1.5 transition duration-300 hover:bg-neutral-400 active:bg-neutral-400"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
