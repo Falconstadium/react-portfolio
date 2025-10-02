@@ -45,7 +45,8 @@ const Home = () => {
               exit={{ opacity: 0, y: 50 }}
               transition={{ duration: 0.5 }}
               type="button"
-              className={`md:bottom-8} fixed right-4 bottom-14 rounded-full bg-blue-600 p-1 transition-colors duration-300 hover:bg-blue-500 md:right-8`}
+              title="Return to Top"
+              className={`fixed right-4 bottom-14 rounded-full bg-blue-600 p-1 transition-colors duration-300 hover:bg-blue-500 md:right-8 md:bottom-8`}
               onClick={scrollToTop}
             >
               <svg
