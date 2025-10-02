@@ -9,7 +9,7 @@ const lang = getLang() as LanguageKey;
 
 export const Hero = () => {
   return (
-    <div className="animate-fadein mx-auto grid max-w-lg place-content-center place-items-start gap-3 px-6 py-12">
+    <div className="mx-auto grid max-w-lg place-content-center place-items-start gap-3 px-6 py-12">
       <motion.div
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
