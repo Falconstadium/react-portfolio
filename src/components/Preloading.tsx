@@ -1,6 +1,6 @@
 const Preloading = () => {
   return (
-    <div className="size-20 animate-spin rounded-full border-8 border-gray-600 border-t-blue-600 md:size-28" />
+    <div className="size-14 animate-spin rounded-full border-4 border-neutral-400 border-t-blue-600 md:size-20 md:border-8" />
   );
 };
 
