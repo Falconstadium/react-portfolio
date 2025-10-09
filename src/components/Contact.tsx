@@ -14,10 +14,10 @@ export const Contact = () => {
       <div className="relative mx-auto flex max-w-xl items-center justify-between">
         <div className="grid gap-4">
           <motion.div
-            initial={{ y: 50, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.3 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, amount: "all" }}
+            transition={{ duration: 1 }}
             className="flex items-center gap-3 text-neutral-400 transition-colors duration-300 hover:text-white active:text-white"
           >
             <svg

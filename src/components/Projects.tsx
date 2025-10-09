@@ -10,10 +10,10 @@ export const Projects = () => {
   return (
     <section className="mx-auto grid max-w-xl place-content-center place-items-center gap-6 px-4 py-12">
       <motion.h1
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 1 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: "all" }}
+        transition={{ duration: 1.5 }}
         className="font-semibold text-rose-500 uppercase"
       >
         {resources[lang].project.title}
@@ -21,10 +21,10 @@ export const Projects = () => {
       <div className="grid gap-10">
         {projects.map((pro) => (
           <motion.div
-            initial={{ opacity: 0, scale: 0.9, y: 10 }}
-            whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, amount: "all" }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
             className="shadow-dark grid gap-3 rounded px-4 py-2"
             key={pro.id}
           >
