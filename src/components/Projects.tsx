@@ -12,8 +12,8 @@ export const Projects = () => {
       <motion.h1
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: "all" }}
-        transition={{ duration: 1.5 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 1.5, ease: "easeIn", type: "spring" }}
         className="font-semibold text-rose-500 uppercase"
       >
         {resources[lang].project.title}
@@ -21,9 +21,9 @@ export const Projects = () => {
       <div className="grid gap-10">
         {projects.map((pro) => (
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: "all" }}
+            initial={{ opacity: 0, x: pro.x }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, ease: "easeIn" }}
             className="shadow-dark grid gap-3 rounded px-4 py-2"
             key={pro.id}

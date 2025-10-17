@@ -41,6 +41,7 @@ export const projects = [
     link: "https://risat.vercel.app/",
     githubRepo: "https://github.com/Falconstadium/risat",
     stack: "React, TypeScript, Tailwind CSS, Tanstack Router",
+    x: 50,
   },
   {
     id: 2,
@@ -52,6 +53,7 @@ export const projects = [
     githubRepo: "https://github.com/Falconstadium/shopper-store",
     stack:
       "React, TypeScript, Tailwind CSS, Zustand, Tanstack Router, Tanstack Query",
+    x: -50,
   },
   {
     id: 3,
@@ -62,5 +64,6 @@ export const projects = [
     link: "https://dentalab.vercel.app/",
     githubRepo: "https://github.com/Falconstadium/DENTALAB",
     stack: "Html, CSS, JavaScript, AOS",
+    x: 50,
   },
 ];
