@@ -21,10 +21,10 @@ export const Projects = () => {
       <div className="grid gap-10">
         {projects.map((pro) => (
           <motion.div
-            initial={{ opacity: 0, x: pro.x }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.5, ease: "easeIn" }}
+            initial={{ opacity: 0, scale: 0.7, rotate: pro.rotate }}
+            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5, ease: "easeIn", type: "spring" }}
             className="shadow-dark grid gap-3 rounded px-4 py-2"
             key={pro.id}
           >
