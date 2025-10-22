@@ -30,9 +30,9 @@ export const frSharedResources = {
       title: "landing page",
       desc: "DENTALAB est une page d’accueil pour une clinique dentaire, elle comprend une brève introduction et certains de leurs services.",
     },
-    rayyan: {
-      title: "al rayyan miel",
-      desc: "Ce site présente différents types de miel et leurs avantages.",
+    huge: {
+      title: "agence de voyage",
+      desc: "Huge Weather est une entreprise de voyage qui cible les femmes. Cette entreprise cherche à augmenter leurs ventes.",
     },
   },
 };

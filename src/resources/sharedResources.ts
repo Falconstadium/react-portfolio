@@ -34,9 +34,9 @@ export const resources = {
         title: "landing page",
         desc: "DENTALAB is a landing page for a dental clinic, it includes a brief introduction and some of their services.",
       },
-      rayyan: {
-        title: "al rayyan honey",
-        desc: "This website presents some different types of honey and their benefits.",
+      huge: {
+        title: "travel company",
+        desc: "Huge Weather is a travel company that targets women. This company looks to increase their sales.",
       },
     },
   },
