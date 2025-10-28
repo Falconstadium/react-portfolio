@@ -24,7 +24,7 @@ export const Projects = () => {
             initial={{ opacity: 0, scale: 0.7, rotate: pro.rotate }}
             whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5, ease: "easeIn", type: "spring" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="shadow-dark grid gap-3 rounded px-4 py-2"
             key={pro.id}
           >
