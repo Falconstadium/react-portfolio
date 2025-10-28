@@ -10,12 +10,12 @@ export const Contact = () => {
     : "en";
 
   return (
-    <section className="px-6 py-4" id="contact" dir="ltr">
+    <section className="px-6 py-8" id="contact" dir="ltr">
       <div className="relative mx-auto flex max-w-xl items-center justify-between">
         <div className="grid gap-4">
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: "all" }}
             transition={{ duration: 1 }}
             className="flex items-center gap-3 text-neutral-400 transition-colors duration-300 hover:text-white active:text-white"

@@ -46,9 +46,9 @@ const LangSelector = ({ langName }) => {
   return (
     <>
       <motion.button
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.05 }}
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
         type="button"
         ref={buttonRef}
         onClick={() => handleClickOutside()}
