@@ -3,7 +3,7 @@ import { getLang } from "../lib";
 import { resources } from "../resources/sharedResources";
 
 import dentalab from "./dentalab.jpeg";
-import huge from "./hugeweather.png";
+import huge from "./hugeweather.jpeg";
 import risat from "./risat.jpeg";
 import shopper from "./shopper.png";
 
