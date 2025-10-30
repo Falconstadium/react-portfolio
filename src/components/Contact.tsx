@@ -37,7 +37,7 @@ export const Contact = () => {
             </svg>
             <a
               href="mailto:yassiraterta@gmail.com"
-              className="text-xs tracking-wide md:text-sm"
+              className="text-xs font-medium tracking-wide md:text-sm"
             >
               yassiraterta@gmail.com
             </a>

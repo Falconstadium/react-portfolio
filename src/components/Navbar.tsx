@@ -4,7 +4,7 @@ export const Navbar = () => {
   return (
     <header className="px-6 py-8" dir="ltr">
       <nav className="mx-auto max-w-4xl">
-        <ul className="flex items-center justify-end gap-8 text-sm text-neutral-400">
+        <ul className="flex items-center justify-end gap-8 text-sm font-medium text-neutral-400">
           <motion.li
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -14,7 +14,7 @@ export const Navbar = () => {
               href="https://www.linkedin.com/in/yassiraterta"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition-colors duration-300 hover:text-white"
+              className="transition-colors duration-300 hover:text-neutral-100"
             >
               Linkedin
             </a>
@@ -28,7 +28,7 @@ export const Navbar = () => {
               href="https://github.com/Falconstadium"
               target="_blank"
               rel="noopener noreferrer"
-              className="transition-colors duration-300 hover:text-white"
+              className="transition-colors duration-300 hover:text-neutral-100"
             >
               Github
             </a>

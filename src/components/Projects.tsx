@@ -10,10 +10,10 @@ export const Projects = () => {
   return (
     <section className="mx-auto grid max-w-xl place-content-center place-items-center gap-6 px-4 py-12">
       <motion.h1
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 1.5, ease: "easeIn", type: "spring" }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1.5, ease: "easeOut", type: "spring" }}
         className="font-semibold text-rose-500 uppercase"
       >
         {resources[lang].project.title}
@@ -21,8 +21,8 @@ export const Projects = () => {
       <div className="grid gap-10">
         {projects.map((pro) => (
           <motion.div
-            initial={{ opacity: 0, scale: 0.7, rotate: pro.rotate }}
-            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+            initial={{ opacity: 0, scale: 0.7 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="shadow-dark grid gap-3 rounded px-4 py-2"
@@ -38,8 +38,8 @@ export const Projects = () => {
               <h3 className="text-sm font-medium capitalize">
                 {pro.name}: {pro.title}
               </h3>
-              <p className="text-sm text-neutral-400">{pro.desc}</p>
-              <p className="text-sm font-light text-neutral-400">{pro.stack}</p>
+              <p className="text-sm font-medium text-neutral-400">{pro.desc}</p>
+              <p className="text-sm text-neutral-400">{pro.stack}</p>
               <div className="flex items-center justify-center gap-4">
                 <a
                   href={pro.link}

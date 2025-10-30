@@ -9,7 +9,7 @@ const lang = getLang() as LanguageKey;
 
 export const Hero = () => {
   return (
-    <div className="mx-auto grid max-w-lg place-content-center place-items-start gap-3 px-6 py-12">
+    <div className="mx-auto grid max-w-lg place-content-center place-items-start gap-3 px-6 py-12 font-medium">
       <motion.div
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -20,7 +20,7 @@ export const Hero = () => {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeIn" }}
-        className="text-white"
+        className="text-neutral-100"
       >
         {resources[lang].hero.greeting}
         <span className="capitalize">{resources[lang].hero.name}.</span>
@@ -29,7 +29,7 @@ export const Hero = () => {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.2, type: "spring" }}
-        className="text-sm text-neutral-400"
+        className="text-sm tracking-wider text-neutral-400"
       >
         {resources[lang].hero.title}
         <span> {resources[lang].hero.desc}</span>
@@ -39,7 +39,7 @@ export const Hero = () => {
         initial={{ x: -5, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.4 }}
-        className="text-sm tracking-wide text-white capitalize"
+        className="text-sm font-medium tracking-wide text-neutral-100 capitalize"
       >
         {resources[lang].hero.tech}
       </motion.h3>
@@ -51,9 +51,7 @@ export const Hero = () => {
       >
         {tech.map((stack) => (
           <li key={stack.id}>
-            <h4 className="text-sm font-light text-neutral-400">
-              {stack.title}
-            </h4>
+            <h4 className="text-sm text-neutral-400">{stack.title}</h4>
           </li>
         ))}
       </motion.ul>
