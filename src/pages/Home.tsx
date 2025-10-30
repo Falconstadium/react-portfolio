@@ -46,13 +46,13 @@ const Home = () => {
               transition={{ duration: 0.5 }}
               type="button"
               title="Return to Top"
-              className={`fixed right-4 bottom-14 rounded-full bg-blue-600 p-4 transition-colors duration-300 hover:bg-blue-500 md:right-8 md:bottom-8`}
+              className={`fixed right-4 bottom-14 rounded-full bg-blue-600/75 p-3 transition-colors duration-300 hover:bg-blue-600 md:right-8 md:bottom-8`}
               onClick={scrollToTop}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
