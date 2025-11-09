@@ -46,7 +46,7 @@ const Home = () => {
               transition={{ duration: 0.5 }}
               type="button"
               title="Return to Top"
-              className={`fixed right-4 bottom-14 rounded-full bg-blue-600/75 p-3 transition-colors duration-300 hover:bg-blue-600 md:right-8 md:bottom-8`}
+              className={`group fixed right-4 bottom-14 rounded-full bg-blue-600/75 p-3 transition-colors duration-300 hover:bg-blue-600 md:right-8 md:bottom-8`}
               onClick={scrollToTop}
             >
               <svg
@@ -59,7 +59,7 @@ const Home = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-arrow-up-icon lucide-arrow-up"
+                className="lucide lucide-arrow-up-icon lucide-arrow-up transition duration-300 group-hover:-translate-y-1.5"
               >
                 <path d="m5 12 7-7 7 7" />
                 <path d="M12 19V5" />
