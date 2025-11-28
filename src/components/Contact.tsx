@@ -36,10 +36,10 @@ export const Contact = () => {
               <rect x="2" y="4" width="20" height="16" rx="2" />
             </svg>
             <a
-              href="mailto:yassiraterta@gmail.com"
+              href="mailto:aterta03@gmail.com"
               className="text-xs font-medium tracking-wide md:text-sm"
             >
-              yassiraterta@gmail.com
+              aterta03@gmail.com
             </a>
           </motion.div>
         </div>
