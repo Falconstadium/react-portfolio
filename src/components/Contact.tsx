@@ -1,17 +1,9 @@
 import { motion } from "framer-motion";
-import { getLang } from "../lib";
-import type { LanguageKey } from "./Hero";
-import LangSelector from "./LangSelector";
 
 export const Contact = () => {
-  const lang = getLang() as LanguageKey;
-  const validatedLang: LanguageKey = ["en", "fr", "ar"].includes(lang)
-    ? (lang as LanguageKey)
-    : "en";
-
   return (
     <section className="px-6 py-8" id="contact" dir="ltr">
-      <div className="relative mx-auto flex max-w-xl items-center justify-between">
+      <div className="mx-auto flex max-w-xl items-center justify-between">
         <div className="grid gap-4">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -43,7 +35,38 @@ export const Contact = () => {
             </a>
           </motion.div>
         </div>
-        <LangSelector langName={validatedLang} />
+        <ul className="flex items-center justify-end gap-8 text-sm font-medium text-neutral-400">
+          <motion.li
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: "all" }}
+            transition={{ duration: 1 }}
+          >
+            <a
+              href="https://www.linkedin.com/in/yassiraterta"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors duration-300 hover:text-neutral-100"
+            >
+              Linkedin
+            </a>
+          </motion.li>
+          <motion.li
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: "all" }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
+            <a
+              href="https://github.com/Falconstadium"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors duration-300 hover:text-neutral-100"
+            >
+              Github
+            </a>
+          </motion.li>
+        </ul>
       </div>
     </section>
   );
