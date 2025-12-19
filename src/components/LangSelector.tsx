@@ -47,8 +47,8 @@ const LangSelector = ({ langName }) => {
     <>
       <motion.button
         initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 0.5 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2, type: "spring" }}
         type="button"
         ref={buttonRef}
         onClick={() => handleClickOutside()}
@@ -75,7 +75,7 @@ const LangSelector = ({ langName }) => {
         {showLngMenu ? (
           <motion.div
             ref={menuRef}
-            className={`absolute bottom-8 z-10 grid origin-bottom-right gap-2 rounded-sm bg-neutral-900 py-1.5 text-white ${lang == "ar" ? "right-0" : "right-2"}`}
+            className={`absolute z-10 grid origin-top-right gap-2 rounded-sm bg-neutral-900 py-1.5 text-white ${lang == "ar" ? "right-0" : "right-2"}`}
             initial={{ opacity: 0, scale: 0, translateY: -20 }}
             animate={{ opacity: 1, scale: 1, translateY: 0 }}
             exit={{ opacity: 0, scale: 0, translateY: -20 }}
