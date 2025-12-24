@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const NotFound = () => {
   return (
     <main className="bg-neutral-950">
-      <section className="font-oswald animate-fadein mx-auto grid min-h-dvh max-w-3xl place-content-center place-items-center">
+      <section className="font-main animate-fadein mx-auto grid min-h-dvh max-w-3xl place-content-center place-items-center">
         <h1 className="absolute animate-pulse text-[15rem] font-black tracking-tighter text-neutral-800 md:text-[20rem]">
           404
         </h1>
