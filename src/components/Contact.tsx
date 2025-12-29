@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export const Contact = () => {
   return (
-    <section className="px-6 py-8" id="contact" dir="ltr">
+    <section className="font-satoshi px-6 py-8" id="contact" dir="ltr">
       <div className="mx-auto flex max-w-xl items-center justify-between">
         <div className="grid gap-4">
           <motion.div
@@ -64,6 +64,21 @@ export const Contact = () => {
               className="transition-colors duration-300 hover:text-neutral-100"
             >
               Github
+            </a>
+          </motion.li>
+          <motion.li
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, amount: "all" }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
+            <a
+              href="https://www.instagram.com/yassirdevs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors duration-300 hover:text-neutral-100"
+            >
+              Instagram
             </a>
           </motion.li>
         </ul>
