@@ -2,40 +2,55 @@
 
 @import "tailwindcss";
 
+/*General Sans*/
 @font-face {
   font-family: "General Sans";
-  src: url(./assets/fonts/GeneralSans-Medium.woff2);
-  font-weight: 500;
+  src: url(./assets/fonts/general/GeneralSans-Light.woff2);
+  font-weight: 300;
   font-display: swap;
 }
 @font-face {
   font-family: "General Sans";
-  src: url(./assets/fonts/GeneralSans-Bold.woff2);
-  font-weight: 700;
-  font-display: swap;
-}
-@font-face {
-  font-family: "General Sans";
-  src: url(./assets/fonts/GeneralSans-Regular.woff2);
+  src: url(./assets/fonts/general/GeneralSans-Regular.woff2);
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "General Sans";
-  src: url(./assets/fonts/GeneralSans-Semibold.woff2);
+  src: url(./assets/fonts/general/GeneralSans-Medium.woff2);
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "General Sans";
+  src: url(./assets/fonts/general/GeneralSans-Semibold.woff2);
   font-weight: 600;
   font-display: swap;
 }
 @font-face {
   font-family: "General Sans";
-  src: url(./assets/fonts/GeneralSans-Light.woff2);
-  font-weight: 300;
+  src: url(./assets/fonts/general/GeneralSans-Bold.woff2);
+  font-weight: 700;
+  font-display: swap;
+}
+
+/*Satoshi*/
+@font-face {
+  font-family: "Satoshi";
+  src: url(./assets/fonts/satoshi/Satoshi-Regular.woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url(./assets/fonts/satoshi/Satoshi-Medium.woff2);
+  font-weight: 500;
   font-display: swap;
 }
 
 @theme {
   --font-main: "General Sans", system-ui;
-  --font-oswald: "Oswald", system-ui;
+  --font-satoshi: "Satoshi", system-ui;
   --animate-fadein: fade linear 1s;
   --shadow-dark: rgba(149, 157, 165, 0.1) 0px 8px 24px;
 }
