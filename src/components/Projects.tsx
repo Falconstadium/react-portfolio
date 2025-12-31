@@ -32,7 +32,7 @@ export const Projects = () => {
               src={pro.src}
               alt={pro.name}
               loading="lazy"
-              className="h-52 w-full rounded-sm object-cover object-top transition-all duration-1000 hover:object-bottom active:object-bottom md:h-[260px]"
+              className="h-40 w-full rounded-sm object-cover object-top transition-all duration-1000 hover:object-bottom active:object-bottom md:h-60"
             />
             <div className="grid place-content-center space-y-4 px-4 py-2">
               <h3 className="text-sm font-medium capitalize">
