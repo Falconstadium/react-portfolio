@@ -8,7 +8,7 @@ export const Navbar = () => {
     ? (lang as LanguageKey)
     : "en";
   return (
-    <header className="px-6 py-8" dir="ltr">
+    <header className="font-satoshi px-6 py-8" dir="ltr">
       <nav className="mx-auto max-w-4xl">
         <div className="relative float-end">
           <LangSelector langName={validatedLang} />
